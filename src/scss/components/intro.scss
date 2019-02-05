@@ -1,0 +1,73 @@
+.intro {
+    @include backgroundShorthand('/intro-bg.jpg');
+
+    position: relative;
+    padding: 18.75rem 0;
+    color: map-get($intro, 'section-font-color');
+
+    @include media ("<=widescreen") {
+        padding: 12rem 0;
+    }
+
+    @include media ("<=desktop") {
+        padding: 0;
+        min-height: 500px;
+    }
+
+    .title-box {
+        max-width: 61.625rem;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+        text-align: center;
+        z-index: 1;
+
+        @include media ("<=desktop") {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        @include media ("<=tablet") {
+            top: 55%;
+        }
+
+
+        h1 {
+            margin-bottom: 2.375rem;
+
+            @include media ("<=desktop") {
+                font-size: 3rem;
+                margin-bottom: 1.6rem;
+            }
+        }
+
+        p {
+            font-size: 1.5rem;
+            line-height: 2.06rem;
+
+            @include media ("<=desktop") {
+                font-size: 1.3rem;
+                line-height: 1.8rem;
+            }
+        }
+    }
+
+    .startBtn {
+        margin-top: 4.25rem;
+        font-size: 1.125rem;
+        letter-spacing: 0.025em;
+        padding: 1.625rem 4.375rem;
+        border-radius: 5px;
+
+        @include media ("<=desktop") {
+            padding: 1.5rem 3rem;
+        }
+
+        @include media ("<=tablet") {
+            margin-top: 1.8rem;
+        }
+    }
+
+
+}
