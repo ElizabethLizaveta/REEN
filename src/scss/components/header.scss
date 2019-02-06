@@ -1,5 +1,5 @@
 .header-top {
-    padding: 0.93rem 0;
+    padding: 0.7rem 0;
     background: map-get($header-top, 'section-bg');
     border-bottom: 1px solid map-get($header-top, 'section-border');
 
@@ -11,7 +11,7 @@
 
     .social {
         i {
-            margin: 0 0.5rem;
+            margin-left: 0.9rem;
         }
 
         @include media ("<=tablet") {
@@ -21,7 +21,7 @@
 
     .contact {
         a {
-            margin: 0 1.75rem 0 0.625rem;
+            margin: 0 1.3rem 0 0.3rem;
 
             @include media ("<=tablet") {
                 font-size: 15px;
@@ -37,7 +37,7 @@
 
 
 .header-nav {
-    padding: 2.25rem 0;
+    padding: 2rem 0;
 
     @include media ("<=desktop") {
         padding: 1.2rem 0;
@@ -69,7 +69,7 @@
         .main-nav {
             display: flex;
             width: 100%;
-            padding: 0 91px;
+            padding: 0 65px;
             flex-direction: row;
             justify-content: space-around;
             z-index: 2;
@@ -213,7 +213,7 @@
                     color: map-get($header-nav, 'section-font-color');
 
                     @include media ("<=desktop") {
-                        font-size: 30px;
+                        font-size: 27px;
                         vertical-align: middle;
                         line-height: 10px;
                     }

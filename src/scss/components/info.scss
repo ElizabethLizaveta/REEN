@@ -3,9 +3,13 @@
             @include media ("<=tablet") {
                 flex-direction: column;
             }
-    }
+        }
 
-    
+    .text-wrap {
+        max-width: 790px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
 
     .col {
         position: relative;
@@ -51,7 +55,7 @@
 
             @include media ("<=phone") {
                 margin-left: 60px;
-             }
+            }
         }
     }
 

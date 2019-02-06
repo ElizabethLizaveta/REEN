@@ -2,7 +2,7 @@
     @include backgroundShorthand('/intro-bg.jpg');
 
     position: relative;
-    padding: 18.75rem 0;
+    padding: 17.5rem 0;
     color: map-get($intro, 'section-font-color');
 
     @include media ("<=widescreen") {
@@ -34,11 +34,11 @@
 
 
         h1 {
-            margin-bottom: 2.375rem;
+            margin-bottom: 1rem;
 
             @include media ("<=desktop") {
                 font-size: 3rem;
-                margin-bottom: 1.6rem;
+                margin-bottom: 1.3rem;
             }
         }
 
@@ -54,11 +54,10 @@
     }
 
     .startBtn {
-        margin-top: 4.25rem;
+        margin-top: 3.8rem;
         font-size: 1.125rem;
         letter-spacing: 0.025em;
-        padding: 1.625rem 4.375rem;
-        border-radius: 5px;
+        padding: 1.3rem 4.375rem;
 
         @include media ("<=desktop") {
             padding: 1.5rem 3rem;

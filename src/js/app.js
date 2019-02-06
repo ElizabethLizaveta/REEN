@@ -6,6 +6,7 @@
 import searchNav from './modules/search';
 import MobMenu from './modules/mob_menu';
 import Slider from './modules/slider';
+import FormValid from './modules/form_valid';
 
 (($) => {
   // When DOM is ready
@@ -14,4 +15,5 @@ import Slider from './modules/slider';
   });
   MobMenu.menuOpen();
   Slider.slickSlider();
+  FormValid.validateEmail();
 })(jQuery);

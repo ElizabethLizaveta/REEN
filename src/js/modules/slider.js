@@ -11,6 +11,7 @@ const Slider = {
       slidesToShow: 4,
       slidesToScroll: 4,
       dots: true,
+      arrows: false,
       responsive: [
         {
           breakpoint: 980,

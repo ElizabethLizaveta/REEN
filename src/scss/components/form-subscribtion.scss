@@ -1,0 +1,55 @@
+.form-subscription {
+
+    .form-group {
+        position: relative;
+        margin-bottom: 20px;
+
+        @include media ("<=widescreen") {
+            margin-bottom: 5px;
+        }
+
+        input {
+            height: 48px;
+            width: 100%;
+            border: 0;
+            border-radius: 5px;
+            background: map-get($forms, 'form-input-bg');
+            font-size: map-get($forms, 'form-font-size');
+            color: map-get($forms, 'input-font-color');
+
+            @include media ("<=widescreen") {
+                height: 40px;
+            }
+
+            &::placeholder {
+                color: map-get($forms, 'placeholder-font-color');
+                font-size: map-get($forms, 'form-font-size');
+            }
+        }
+
+        .subscribeBtn {
+            padding: 0.68rem;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 4px;
+            font-size: map-get($forms, 'form-button-font-size');
+
+            @include media ("<=widescreen") {
+                position: relative;
+                width: 100%;
+                margin-top: 30px;
+                right: 0;
+            }
+
+        }
+    }
+
+    .alert-message {
+        position: absolute;
+        font-family: map-get($fonts, 'head-font');
+        font-size: 14px;
+        font-weight: 700;
+        color:  #ff9d66;
+    }
+}

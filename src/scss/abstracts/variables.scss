@@ -1,7 +1,6 @@
 // Breakpoints for include media mixin
 $breakpoints: (phone: 480px, tablet: 768px, desktop: 980px, widescreen: 1200px);
  
-//General
 $headings: (
     'h1-font-size': 4.875rem, //78px
     'h2-font-size': 2.75rem, //44px
@@ -20,7 +19,6 @@ $font-colors: (
   'dark-blue':  #506a85, 
 );
 
-//Base 
 $base: (
   'base-font-size': 0.875rem, //14px
   'base-link-size': 0.875rem, //14px
@@ -30,9 +28,9 @@ $base: (
   'link-hover': #78889a,
   'button-bg': #00bc9c,
   'button-border': #00a085,
+  'button-hover':  #00a085,
 );
 
-//Header
 $header-top: (
   'section-bg': #f5f7fa,
   'section-border': #e6e9ed,
@@ -72,36 +70,26 @@ $portfolio: (
   'dots-active-color': #00bc9c,
 );
 
-
-// Vars for forms
 $forms: (
   'form-font-family': unquote("'Source Sans Pro', sans-serif"),
-  'input-font-size': 0.875rem,
-  'input-font-color': #6e7279,
+  'input-font-color': #a3b1bf,
+  'placeholder-font-color': #a3b1bf,
   'form-element-padding': 12px,
-  'form-input-border': #506a85,
-  'form-button-color':  #b5a263,
-  'form-button-hover':  #8a7c4c,
-  'form-button-font-color': #fff,
-  'form-button-font-size':  0.875rem,
-  'form-element-border-color': #506a85,
-  'placeholder-color': #506a85,
+  'form-input-bg': #4e5c6c,
+  'form-font-size': 0.875rem,
+  'form-button-font-size':  0.81rem, 
 );
 
-//contact-section
-$contact: (
-  'section-background':  #2b2f35,
-  'section-font-size': 0.875rem,
-  'section-font-family': unquote("'Open Sans', sans-serif"),
-  'section-font-color': #6e7279,
+$footer-top: (
+  'section-bg':  #1b3e56,
+  'section-font-size': 14px,
+  'section-font-color': #a3b1bf,
 );
 
- 
-
-//footer
-$footer: (
-  'section-background':  #24282f, 
-  'section-font-color': #6e7279,
+$footer-nav: (
+  'section-bg':  #283645,
+  'section-font-size': 14px,
+  'section-font-color': #a3b1bf,
 );
 
 //image path setting
