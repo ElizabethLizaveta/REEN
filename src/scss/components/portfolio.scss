@@ -25,7 +25,7 @@
 			 
 			li {
 				margin: 0;
-				
+
 				button {
 					display: block;
 					width: 13px;
@@ -60,23 +60,24 @@
 		}
 	}
 
-	.container {
-		max-width: 1170px;
-		padding: 0;
-	}
-
-	img {
+	 
+	.img-holder, img {
 		width: 100%;
 	}
 
 	.img-holder {
-		margin: 15px;
 		background: map-get($portfolio, 'img-holder-bg');
 		border: 1px solid map-get($portfolio, 'section-border');
-
+		
 	h4 {
 		margin-top: 2.06rem;
 		margin-bottom:  0.6rem;
+
+		@include media ("<=desktop" and ">tablet" and "<=phone") {
+			font-size: 1rem;
+		}
+
+
 	}
 
 	p {
@@ -85,4 +86,14 @@
 		margin-bottom:  1.875rem;
 	}
 }
+
+.img-holder + .img-holder {
+	margin-left: 30px;
+
+	@include media ("<=tablet") {
+		margin-left: 0;
+		margin-top: 30px;
+	}
+}
+
 }

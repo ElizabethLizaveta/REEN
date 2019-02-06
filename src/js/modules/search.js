@@ -16,6 +16,7 @@ const searchNav = {
     $(document).mouseup((e) => {
       if (!inputSearch.is(e.target)) {
         inputSearch.removeClass('is-visible');
+        inputSearch.val('');
       }
     });
   },
