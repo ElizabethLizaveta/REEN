@@ -1,6 +1,6 @@
 const Slider = {
   slickSlider() {
-    $('.multiple-items').slick({
+    $('.portfolio-slider').slick({
       infinite: true,
       autoplay: true,
       autoplaySpeed: 3000,
@@ -11,7 +11,9 @@ const Slider = {
       slidesToShow: 4,
       slidesToScroll: 4,
       dots: true,
-      arrows: false,
+      arrows: true,
+      prevArrow: '<i class="icon-chevron-left prev1"></i>',
+      nextArrow: '<i class="icon-chevron-right next1"></i>',
       responsive: [
         {
           breakpoint: 980,
@@ -36,6 +38,17 @@ const Slider = {
             slidesToScroll: 1,
           },
         }],
+    });
+
+    $('.intro-slider').slick({
+      infinite: true,
+      autoplay: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
+      arrows: true,
+      prevArrow: '<i class="icon-chevron-left prev1"></i>',
+      nextArrow: '<i class="icon-chevron-right next1"></i>',
     });
   },
 };

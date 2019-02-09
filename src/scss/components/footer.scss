@@ -4,14 +4,14 @@
         color: map-get($footer-top, 'section-font-color');
         background: map-get($footer-top, 'section-bg');
 
-        @include media ("<=tablet") {
+        @include media ("<tablet") {
             padding-bottom: 3rem;
         }
 
         .flex-wrap {
             align-items: flex-start;
 
-            @include media ("<=tablet") {
+            @include media ("<tablet") {
                 flex-direction: column;
             }
         }
@@ -19,13 +19,13 @@
         .col {
             width: 23%;
 
-            @include media ("<=tablet") {
+            @include media ("<tablet") {
                 width: 100%;
             }
         }
 
         .col+.col {
-            @include media ("<=tablet") {
+            @include media ("<tablet") {
                 margin-top: 25px;
             }
         }
@@ -37,6 +37,7 @@
         h5 {
             color: map-get($font-colors, 'white');
             margin-bottom: 1.625rem;
+            text-transform: uppercase;
         }
 
         p {
@@ -45,7 +46,7 @@
             margin-bottom: 1.5rem;
             margin-top: -0.5rem;
 
-            @include media ("<=tablet") {
+            @include media ("<tablet") {
                 margin-top: 0;
             }
 
@@ -84,7 +85,7 @@
             margin-right: 16px;
             max-width: 100%;
 
-            @include media ("<=tablet") {
+            @include media ("<tablet") {
                 width: 100%;
                 margin-right: 0;
                 flex-wrap: nowrap;
@@ -94,7 +95,7 @@
                 width: 49%;
                 margin-bottom: 0.15rem;
 
-                @include media ("<=tablet") {
+                @include media ("<tablet") {
                     margin-bottom: 0;
                     width: 24%;
                 }
@@ -114,7 +115,7 @@
         background: map-get($footer-nav, 'section-bg');
 
         .flex-wrap {
-            @include media ("<=tablet") {
+            @include media ("<tablet") {
                 flex-direction: column;
                 align-items: flex-start;
             }
@@ -122,14 +123,14 @@
 
         .nav {
 
-            @include media ("<=tablet") {
+            @include media ("<tablet") {
                margin-top: 10px;
             }
 
             a {
                 color: map-get($footer-nav, 'section-font-color');
 
-                @include media ("<=phone") {
+                @include media ("<phone") {
                     font-size: 12px;
                 }
 
@@ -140,7 +141,7 @@
                 span.nav-dot {
                     margin: 9px;
 
-                    @include media ("<=tablet") {
+                    @include media ("<tablet") {
                         margin: 3px;
                     }
                 }

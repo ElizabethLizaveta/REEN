@@ -25,10 +25,11 @@ $base: (
   'base-font-family':  unquote("'Source Sans Pro', sans-serif"),
   'base-text-color': #506a85,
   'base-link-color': #506a85,
-  'link-hover': #78889a,
+  'link-hover': #00bc9c,
   'button-bg': #00bc9c,
   'button-border': #00a085,
-  'button-hover':  #00a085,
+  'button-hover':  #17a78b,
+  'img-hover': rgba(#00bc9c, .9),
 );
 
 $header-top: (
@@ -37,6 +38,13 @@ $header-top: (
   'section-font-size': 0.75rem,
   'section-font-family': unquote("'Source Sans Pro', sans-serif"),
   'section-font-color': #506a85,
+  'social-link-hover': #fff,
+  'facebook-hover-bg': #4668b3,
+  'google-hover-bg': #de5745,
+  'twitter-hover-bg': #2fbbed,
+  'pinterest-hover-bg': #d94348,
+  'behance-hover-bg': #3079ff,
+  'dribbble-hover-bg': #eb6397,
 );
 
 $header-nav: (
@@ -44,14 +52,37 @@ $header-nav: (
   'section-font-family': unquote("'Source Sans Pro', sans-serif"),
   'section-font-color': #506a85,
   'section-font-color-selected': #2b3a49,
-  'menu-mob-color': #506a85,
+  'menu-mob-color': rgba(#506a85, 0.95),
   'menu-selected':  #5d7998,
   'icons-bg': #dedede,
+  'dropdown-bg': #f5f7fa,
+  'dropdown-border': #e6e9ed,
+);
+
+$home-dropdown: (
+  'dropdown-bg': #f5f7fa,
+  'dropdown-mob-bg': #7091b5,
+  'dropdown-border': #e6e9ed,
+  'li-hover-bg': #00bc9c,
+  'link-hover-font': #fff,
+);
+
+$mega-menu-dropdown: (
+  'dropdown-bg': #f5f7fa,
+  'dropdown-border': #e6e9ed,
 );
 
 $intro: (
   'section-font-size': 1.5rem,
-  'section-font-color': #fff,
+  'slide-1-font-color': #fff,
+  'slide-2-font-color': #fff,
+  'slide-3-font-color': #36698a,
+  'slide-3-head-color': #fff,
+  'slide-3-head-bg': #36698a,
+  'slide-4-font-color': #fff,
+  'slide-4-head-color': #fff,
+  'slide-4-head-bg': #36698a,
+  'slide-5-font-color': #fff,
 );
 
 $standart-section:(
@@ -66,6 +97,16 @@ $portfolio: (
   'section-bg': #f2f5f7,
   'img-holder-bg': #fff,
   'section-border': #e6e9ed,
+);
+
+$slider: (
+  'arrow-color': #fff,
+  'arrow-hover': #00bc9c,
+  'arrow-bg': #36698a,
+  'arrow-mob-color': #506a85,
+  'arrow-mob-bg': #fff,
+  'arrow-hover-bg': #36698a,
+  'dots-bg': #fff,
   'dots-color': #506a85,
   'dots-active-color': #00bc9c,
 );

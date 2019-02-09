@@ -1,0 +1,105 @@
+.header-top {
+    height: 40px;
+    background: map-get($header-top, 'section-bg');
+    border-bottom: 1px solid map-get($header-top, 'section-border');
+
+    a,
+    i {
+        font-family: map-get($header-top, 'section-font');
+        font-size: map-get($header-top, 'section-font-size');
+        font-weight: 600;
+    }
+
+    .social {
+        height: 40px;
+        display: flex;
+
+
+        a {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding: 0.5rem;
+
+            @include media ("<tablet") {
+                display: none;
+            }
+
+            &.facebook-link {
+
+                &:hover,
+                &:focus {
+                    color: map-get($header-top, 'social-link-hover');
+                    background: map-get($header-top, 'facebook-hover-bg');
+                }
+            }
+
+            &.google-link {
+
+                &:hover,
+                &:focus {
+                    color: map-get($header-top, 'social-link-hover');
+                    background: map-get($header-top, 'google-hover-bg')
+                }
+            }
+
+            &.twitter-link {
+
+                &:hover,
+                &:focus {
+                    color: map-get($header-top, 'social-link-hover');
+                    background: map-get($header-top, 'twitter-hover-bg')
+                }
+            }
+
+            &.pinterest-link {
+
+                &:hover,
+                &:focus {
+                    color: map-get($header-top, 'social-link-hover');
+                    background: map-get($header-top, 'pinterest-hover-bg')
+                }
+            }
+
+            &.behance-link {
+
+                &:hover,
+                &:focus {
+                    color: map-get($header-top, 'social-link-hover');
+                    background: map-get($header-top, 'behance-hover-bg')
+                }
+            }
+
+            &.dribbble-link {
+
+                &:hover,
+                &:focus {
+                    color: map-get($header-top, 'social-link-hover');
+                    background: map-get($header-top, 'dribbble-hover-bg')
+                }
+            }
+        }
+    }
+
+    .contact {
+        height: 40px;
+        display: flex;
+        align-items: center;
+
+        a {
+            margin-right: 1.3rem;
+
+            @include media ("<tablet") {
+                font-size: 15px;
+            }
+
+            &.mobile {
+                margin-right: 0;
+            }
+
+            i {
+                margin-right: 0.3rem;
+            }
+        }
+    }
+}

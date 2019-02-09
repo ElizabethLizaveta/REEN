@@ -20,11 +20,14 @@
 
 //* Components *//
 
-@import 'components/header';
+@import 'components/header-top';
+@import 'components/header-nav';
 @import 'components/intro';
+@import 'components/intro-slider';
 @import 'components/buttons';
 @import 'components/info';
 @import 'components/portfolio';
+@import 'components/portfolio-slider';
 @import 'components/connect';
 @import 'components/footer';
 @import 'components/form-subscribtion';

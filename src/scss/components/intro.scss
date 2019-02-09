@@ -1,44 +1,41 @@
 .intro {
-    @include backgroundShorthand('/intro-bg.jpg');
+    height: 864px;
 
-    position: relative;
-    padding: 17.5rem 0;
-    color: map-get($intro, 'section-font-color');
 
-    @include media ("<=widescreen") {
-        padding: 12rem 0;
+    @include media ("<widescreen") {
+        height: 700px;
     }
 
-    @include media ("<=desktop") {
-        padding: 0;
-        min-height: 500px;
+    @include media ("<desktop") {
+        height: 500px;
+    }
+
+    @include media ("<tablet") {
+        height: 500px;
     }
 
     .title-box {
-        max-width: 61.625rem;
         width: 100%;
-        margin: 0 auto;
-        padding: 0 15px;
-        text-align: center;
-        z-index: 1;
-
-        @include media ("<=desktop") {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
-        @include media ("<=tablet") {
-            top: 55%;
-        }
-
-
+      
         h1 {
             margin-bottom: 1rem;
 
-            @include media ("<=desktop") {
+            @include media ("<widescreen") {
+                font-size: 4rem;
+            }
+
+            @include media ("<desktop") {
                 font-size: 3rem;
                 margin-bottom: 1.3rem;
+            }
+
+            @include media ("<tablet") {
+                font-size: 2.5rem;
+                margin-bottom: 1.3rem;
+            }
+
+            @include media ("<phone") {
+                font-size: 2rem;
             }
         }
 
@@ -46,7 +43,7 @@
             font-size: 1.5rem;
             line-height: 2.06rem;
 
-            @include media ("<=desktop") {
+            @include media ("<desktop") {
                 font-size: 1.3rem;
                 line-height: 1.8rem;
             }
@@ -59,14 +56,189 @@
         letter-spacing: 0.025em;
         padding: 1.3rem 4.375rem;
 
-        @include media ("<=desktop") {
-            padding: 1.5rem 3rem;
+        @include media ("<desktop") {
+            padding: 1.2rem 3rem;
         }
 
-        @include media ("<=tablet") {
+        @include media ("<tablet") {
             margin-top: 1.8rem;
+            padding: 1rem 2.5rem;
+            font-size: 1rem;
         }
     }
+}
+
+.intro-1 {
+    @extend .intro;
+    @include backgroundShorthand('/intro-bg.jpg');
+
+    padding-top: 17.5rem;
+    color: map-get($intro, 'slide-1-font-color');
+
+    @include media ("<widescreen") {
+        padding-top: 13rem;
+    }
+
+    @include media ("<desktop") {
+        padding-top: 10rem;
+    }
+
+    @include media ("<phone") {
+        padding-top: 8rem;
+    }
+    
+    .title-box {
+        max-width: 66.875rem;
+        margin: 0 auto;
+        text-align: center;
+        right: 0;
+    }
+}
+
+.intro-2 {
+    @extend .intro;
+    @include backgroundShorthand('/intro-bg-2.jpg');
+
+    padding-top: 15rem;
+    color: map-get($intro, 'slide-2-font-color');
+
+    @include media ("<widescreen") {
+        padding-top: 11rem;
+    }
+
+    @include media ("<desktop") {
+        padding-top: 8rem;
+    }
+
+    @include media ("<phone") {
+        padding-top: 7rem;
+    }
+
+    .container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .title-box {
+        max-width: 59.5rem;
+        text-align: right;
+    }
+}
+
+.intro-3 {
+    @extend .intro;
+    @include backgroundShorthand('/intro-bg-3.jpg');
+
+    padding-top: 12rem;
+    color: map-get($intro, 'slide-3-font-color');
+
+    @include media ("<widescreen") {
+        padding-top: 9.5rem;
+    }
+
+    @include media ("<desktop") {
+        padding-top: 7rem;
+    }
+
+    @include media ("<tablet") {
+        padding-top: 8rem;
+    }
+    
+    @include media ("<phone") {
+        padding-top: 7rem;
+    }
+
+    .title-box {
+        max-width: 49rem;
+        text-align: left;
+        
+     h1+h1 {
+            margin-top: 1.8rem;
+            margin-bottom: 2.2rem;
+        }
+
+        mark {
+            color: map-get($intro, 'slide-3-head-color');
+            background: map-get($intro, 'slide-3-head-bg');
+            padding: 10px 20px;
+
+            @include media ("<phone") {
+                padding: 10px 15px;
+            }
+        }
+    }
+}
+
+.intro-4 {
+    @extend .intro;
+    @include backgroundShorthand('/intro-bg-4.jpg');
+
+    padding-top: 5.31rem;
+    color: map-get($intro, 'slide-4-font-color');
+
+    @include media ("<widescreen") {
+        padding-top: 4.5rem;
+    }
+
+    @include media ("<desktop") {
+        padding-top: 4.2rem;
+    }
+
+    @include media ("<tablet") {
+        padding-top: 7rem;
+    }
+
+    .container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .title-box {
+        max-width: 51rem;
+        text-align: right;
+
+        h1+h1 {
+            margin-top: 1.8rem;
+            margin-bottom: 2.2rem;
+        }
+
+        mark {
+            color: map-get($intro, 'slide-4-head-color');
+            background: map-get($intro, 'slide-4-head-bg');
+            padding: 10px 20px;
+
+            @include media ("<phone") {
+                padding: 10px 5px;
+            }
+        }
+    }
+}
 
 
+.intro-5 {
+    @extend .intro;
+    @include backgroundShorthand('/intro-bg-5.jpg');
+
+    padding-top: 5.31rem;
+    color: map-get($intro, 'slide-5-font-color');
+
+   
+    @include media ("<widescreen") {
+        padding-top: 4.5rem;
+    }
+
+    @include media ("<desktop") {
+        padding-top: 4.2rem;
+    }
+
+    @include media ("<tablet") {
+        padding-top: 7rem;
+    }
+    
+    .title-box {
+        max-width: 45rem;
+        margin: 0 auto;
+        text-align: center;
+        right: 0;
+    }
 }

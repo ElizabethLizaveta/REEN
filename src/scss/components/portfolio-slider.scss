@@ -1,0 +1,81 @@
+.portfolio-slider {
+	width: 100%;
+	margin-top: 50px;
+
+	.slick {
+		&-track {
+			margin-bottom: 10px;
+			margin-right: -15px;
+		}
+
+		&-slide {
+			margin: 15px;
+			img {
+				width: 100%;
+			}
+		}
+
+		&-dots {
+			display: flex;
+            justify-content: center;
+            position: absolute;
+            bottom: -20px;
+            
+			 
+			li {
+                margin: 0 6px;
+                width: 13px;
+				height: 13px;
+
+				button {
+					display: block;
+					width: inherit;
+					height: inherit;
+					padding: 0;
+					margin: 0 auto;
+					border: none;
+					border-radius: 100%;
+					background-color: map-get($slider, 'dots-color');
+
+					@include media ("<tablet") {
+						width: 9px;
+					    height: 9px;
+					}
+				}
+
+				&.slick-active button {
+					background-color: map-get($slider, 'dots-active-color');
+				}
+			}
+		}
+	}
+
+	.prev1,
+    .next1 {
+        position: absolute;
+        top: 97%;
+        padding: 5px;
+        color: map-get($slider, 'arrow-color');
+		background: map-get($slider, 'arrow-bg');
+		opacity: 0.25;
+        font-size: 28px;
+        border-radius: 5px;
+        z-index: 4; 
+
+        &:hover {
+            color: map-get($slider, 'arrow-hover');
+			background: map-get($slider, 'arrow-hover-bg');
+			opacity: 1;
+        }
+    }
+
+    .prev1 {
+        left: 50%;
+        transform: translateX(-300%);   
+    }
+
+    .next1 {
+		right: 50%;
+        transform: translateX(300%);
+    }
+}

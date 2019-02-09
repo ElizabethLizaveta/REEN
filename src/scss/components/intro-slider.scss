@@ -1,0 +1,110 @@
+.intro-slider {
+    width: 100%;
+    position: relative;
+
+    .slick {
+
+        &-dots {
+            display: block;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -15%);
+            width: 150px;
+            padding: 13px 10px;
+            border-radius: 5px;
+            background: map-get($slider, 'dots-bg');
+
+            @include media ("<desktop") {
+                width: 130px;
+                padding: 8px 9px;
+                transform: translate(-50%, -40%);
+            }
+
+            @include media ("<tablet") {
+                width: 100px;
+                padding: 5px 8px;
+                transform: translate(-50%, -65%);
+            }
+
+            li {
+                margin: 0 5px;
+                width: 16px;
+                height: 16px;
+
+                @include media ("<desktop") {
+                    margin: 0 4px;
+                    width: 13px;
+                    height: 13px;
+                }
+
+                @include media ("<tablet") {
+                    margin: 0 3px;
+                    width: 10px;
+                    height: 10px;
+                }
+
+                button {
+                    display: block;
+                    width: inherit;
+                    height: inherit;
+                    margin: 0 auto;
+                    border: none;
+                    border-radius: 100%;
+                    background-color: map-get($slider, 'dots-color');
+                }
+
+                &.slick-active button {
+                    background-color: map-get($slider, 'dots-active-color');
+                }
+            }
+        }
+    }
+
+    .prev1,
+    .next1 {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 5px;
+        color: map-get($slider, 'arrow-color');
+        opacity: 0.25;
+        background: map-get($slider, 'arrow-bg');
+        font-size: 28px;
+        border-radius: 5px;
+        z-index: 4;
+        cursor: pointer;
+
+        &:hover {
+            color: map-get($slider, 'arrow-hover');
+            opacity: 1;
+
+            @include media ("<1310px") {
+                background: map-get($slider, 'arrow-mob-bg');
+            }
+        }
+
+        @include media ("<1310px") {
+            top: 100%;
+            transform: translateY(-50%);
+            color: map-get($slider, 'arrow-mob-color');
+            background: map-get($slider, 'arrow-mob-bg');
+            opacity: 1;
+        }
+    }
+
+    .prev1 {
+        left: 20px;
+
+        @include media ("<1310px") {
+            left: 0;
+        }
+    }
+
+    .next1 {
+        right: 20px;
+
+        @include media ("<1310px") {
+            right: 0;
+        }
+    }
+}

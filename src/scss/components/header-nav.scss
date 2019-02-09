@@ -1,0 +1,459 @@
+.header-nav {
+    padding: 1.8rem 0;
+
+    @include media ("<widescreen") {
+        padding: 1.2rem 0;
+    }
+
+    .navbar {
+        position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        padding-bottom: 0;
+        align-items: center;
+        font-family: map-get($header-nav, 'section-font');
+        font-size: map-get($header-nav, 'section-font-size');
+        color: map-get($header-nav, 'section-font-color');
+
+        @include media ("<desktop") {
+            justify-content: space-between;
+        }
+
+        .logo {
+            flex-shrink: 0;
+            max-width: 162px;
+
+            @include media ("<widescreen") {
+                max-width: 142px;
+            }
+
+            @include media ("<tablet") {
+                max-width: 122px;
+            }
+
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+
+        .main-nav {
+            display: flex;
+            width: 100%;
+            margin: 0;
+            padding: 0 20px 0 50px;
+            flex-direction: row;
+            justify-content: center;
+            z-index: 5;
+
+            @include media ("<widescreen") {
+                padding: 0 5px 0 15px;
+            }
+
+            @include media ("<desktop") {
+                flex-direction: column;
+                justify-content: space-between;
+                position: absolute;
+                left: -100vw;
+                top: 57px;
+                width: 100vw;
+                min-height: 500px;
+                margin-left: -15px;
+                padding: 50px 0;
+                text-align: center;
+                opacity: 0;
+                transition: 0.5s linear;
+            }
+
+            @include media ("<tablet") {
+                top: 50px;
+                padding-top: 70px;
+                padding-bottom: 10px;
+            }
+
+
+            &.active-menu {
+                opacity: 1;
+                background: map-get($header-nav, 'menu-mob-color');
+                left: 0;
+                right: 0;
+            }
+
+            li {
+                font-size: map-get($header-nav, 'section-font-size');
+                padding: 20px;
+                border: 1px solid transparent;
+
+                @include media ("<widescreen") {
+                    font-size: 12px;
+                    padding: 16px;
+                }
+
+                @include media ("<desktop") {
+                    position: relative;
+                    margin: 0;
+                    padding: 15px 0;
+                    font-size: 16px;
+                    border: none;
+                }
+
+                &:hover,
+                &:focus {
+                    @include media (">=desktop") {
+                        &.drop {
+                            background: map-get($header-nav, 'dropdown-bg');
+                            border: 1px solid map-get($header-nav, 'dropdown-border');
+                            border-bottom: none;
+                            box-shadow: 5px 0px 10px -3px #f5f7fa, -5px 0px 10px -3px #f5f7fa;
+                            border-radius: 5px 5px 0 0px;
+                        }
+                    }
+
+                    .home-dropdown {
+                        display: block;
+                    }
+
+                    .mega-menu-dropdown {
+                        @include media (">=desktop") {
+                        display: block;
+                        }
+                    }
+
+                    .mega-menu-mob-dropdown {
+                        @include media ("<desktop") {
+                            display: block;
+                        }
+                    }
+                }
+
+                a {
+                    font-weight: 700;
+                    text-transform: uppercase;
+
+                    @include media ("<desktop") {
+                        color: map-get($font-colors, 'white');
+                    }
+
+                    &:hover,
+                    &:focus {
+                        color: map-get($base, 'link-hover');
+                    }
+                }
+
+                .nav-item-field {
+                    @include media("<desktop") {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+
+                &.is-selected {
+                    >a {
+                        color: map-get($header-nav, 'section-font-color-selected');
+
+                        @include media("<desktop") {
+                            color: map-get($font-colors, 'white');
+                        }
+                    }
+
+                    @include media("<desktop") {
+                        background: map-get($header-nav, 'menu-selected');
+                    }
+                }
+
+                &.drop-home {
+                    position: relative;
+                }
+            }
+
+            .social {
+                display: none;
+
+                @include media ("<tablet") {
+                    display: block;
+                }
+
+                i {
+                    @include media ("<tablet") {
+                        margin: 0 1rem;
+                    }
+                }
+            }
+
+            //DROPDOWN
+
+            .home-dropdown {
+                display: none;
+                padding: 0;
+                height: 18.1rem;
+                width: 12rem;
+                position: absolute;
+                top: 57px;
+                left: -1px;
+                background: map-get($home-dropdown, 'dropdown-bg');
+                border: 1px solid map-get($home-dropdown, 'dropdown-border');
+                border-radius: 0px 5px 5px 5px;
+                z-index: -1;
+
+                @include media("<widescreen") {
+                    height: 14.3rem;
+                    width: 10rem;
+                    top: 45px;
+                }
+
+                @include media("<desktop") {
+                    position: relative;
+                    height: 16rem;
+                    width: 100%;
+                    top: 15px;
+                    border: none;
+                    border-radius: 0px;
+                    background: map-get($home-dropdown, 'dropdown-mob-bg');
+                    z-index: 1;
+                }
+
+                @include media("<tablet") {
+                    height: 17.1rem;
+                }
+
+                &:hover,
+                &:focus {
+                    display: block;
+                }
+
+                li {
+                    position: relative;
+
+                    @include media("<desktop") {
+                        border: none;
+                    }
+
+                    &:hover,
+                    &:focus {
+                        background: map-get($home-dropdown, 'li-hover-bg');
+
+                        a {
+                            color: map-get($home-dropdown, 'link-hover-font');
+                        }
+                    }
+                }
+
+                li:first-child {
+                    &:hover,
+                    &:focus {
+                        border-radius: 0px 5px 0px 0px;
+
+                        @include media("<desktop") {
+                            border-radius: 0px;
+                        }
+                    }
+                }
+
+                li:last-child {
+                    &:hover,
+                    &:focus {
+                        border-radius: 0px 0px 5px 5px;
+
+                        @include media("<desktop") {
+                            border-radius: 0px;
+                        }
+                    }
+                }
+
+                li+li {
+                    border-top: 1px solid map-get($home-dropdown, 'dropdown-border');
+                    border: none;
+
+                }
+
+                .nav-item-field {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                }
+            }
+
+            .mega-menu-dropdown {
+                display: none;
+                padding: 0;
+                height: 26.25rem;
+                width: 100%;
+                background: map-get($mega-menu-dropdown, 'dropdown-bg');
+                border: 1px solid map-get($mega-menu-dropdown, 'dropdown-border');
+                border-radius: 5px;
+                position: absolute;
+                top: 57px;
+                left: 0px;
+                z-index: -1;
+
+                @include media ("<widescreen") {
+                    top: 45px;
+                }
+
+                @include media ("<desktop") {
+                    display: none;
+                }
+
+                &:hover,
+                &:focus {
+                    @include media (">=desktop") {
+                        display: block;
+                    }
+                }
+
+            }
+
+            .mega-menu-mob-dropdown {
+                display: none;
+                position: relative;
+                height: 12.8rem;
+                width: 100%;
+                padding: 0;
+                top: 15px;
+                border: none;
+                border-radius: 0px;
+                background: map-get($home-dropdown, 'dropdown-mob-bg');
+                z-index: 1;
+
+                @include media("<tablet") {
+                    height: 13.8rem;
+                }
+
+                &:hover,
+                &:focus {
+                    display: block;
+                }
+
+                li {
+                    position: relative;
+                    border-radius: 0px;
+                    border: none;
+
+                    &:hover,
+                    &:focus {
+                        background: map-get($home-dropdown, 'li-hover-bg');
+
+                        a {
+                            color: map-get($home-dropdown, 'link-hover-font');
+                        }
+                    }
+                }
+
+                .nav-item-field {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                }
+
+            }
+        }
+    }
+
+    .aside-section {
+        display: flex;
+
+        @include media ("<tablet") {
+            flex-direction: column-reverse;
+            align-items: flex-end;
+        }
+
+        .hamburger {
+            display: none;
+            padding: 0;
+            margin-left: 10px;
+
+            @include media ("<desktop") {
+                display: inline-block;
+            }
+
+            &-inner,
+            &-inner::before,
+            &-inner::after {
+                background-color: map-get($header-nav, 'section-font-color');
+            }
+        }
+    }
+
+    .search {
+        display: flex;
+        z-index: 3;
+
+        @include media ("<tablet") {
+            position: absolute;
+            top: 80px;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .searchBtn {
+            padding: 0 0 0 5px;
+
+            .icon-search {
+                color: map-get($header-nav, 'section-font-color');
+
+                @include media ("<desktop") {
+                    font-size: 27px;
+                    vertical-align: middle;
+                    line-height: 10px;
+                }
+
+                @include media ("<tablet") {
+                    color: map-get($font-colors, 'white');
+                }
+
+                &:hover,
+                &:focus {
+                    color: map-get($base, 'link-hover');
+                }
+
+            }
+        }
+
+        .search-input {
+            opacity: 0;
+            height: 10px;
+            width: 170px;
+            border-radius: 200px;
+            flex-grow: 1;
+            color: map-get($header-nav, 'section-font-color');
+
+            @include media ("<widescreen") {
+                width: 150px;
+            }
+
+            &.is-visible {
+                opacity: 0.6;
+            }
+        }
+    }
+
+    .search-mobile {
+        display: none;
+
+        @include media ("<tablet") {
+            display: block;
+        }
+
+        .search {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            top: -40px;
+            width: 100%;
+            padding: 0 15px;
+
+            .search-input {
+                opacity: 0.6;
+            }
+
+        }
+    }
+}

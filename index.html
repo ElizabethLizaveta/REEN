@@ -19,18 +19,16 @@
       <div class="container">
         <div class="flex-wrap">
           <div class="contact">
-            <i class="icon-envelope-o"></i>
-            <a href="#" class="mail">info@reen.com</a>
-            <i class="icon-mobile2"></i>
-            <a href="#" class="mobile">+00 (123) 456 78 90</a>
+            <a href="#" class="mail"><i class="icon-envelope-o"></i>info@reen.com</a>
+            <a href="#" class="mobile"><i class="icon-mobile2"></i>+00 (123) 456 78 90</a>
           </div>
           <div class="social">
-            <a href="#"><i class="icon-facebook"></i></a>
-            <a href="#"><i class="icon-google"></i></a>
-            <a href="#"><i class="icon-twitter"></i></a>
-            <a href="#"><i class="icon-pinterest"></i></a>
-            <a href="#"><i class="icon-behance"></i></a>
-            <a href="#"><i class="icon-dribbble"></i></a>
+            <a href="#" class="facebook-link"><i class="icon-facebook"></i></a>
+            <a href="#" class="google-link"><i class="icon-google"></i></a>
+            <a href="#" class="twitter-link"><i class="icon-twitter"></i></a>
+            <a href="#" class="pinterest-link"><i class="icon-pinterest"></i></a>
+            <a href="#" class="behance-link"><i class="icon-behance"></i></a>
+            <a href="#" class="dribbble-link"><i class="icon-dribbble"></i></a>
           </div>
         </div>
       </div>
@@ -44,8 +42,21 @@
               <a href="#"><img src="assets/images/reen-logo.jpg" alt="logo"></a>
             </div>
             <ul class="main-nav">
-              <li class="is-selected">
+              <li class="search-mobile">
+                <div class="search">
+                  <input type="text" class="search-input">
+                  <button type="button" class="searchBtn"><i class="icon-search"></i></button>
+                </div>
+              </li>
+              <li class="is-selected drop drop-home">
                 <a href="#" class="nav-links">Home<span class="nav-item-field"></span></a>
+                <ul class="home-dropdown">
+                  <li><a href="#">Agency style<span class="nav-item-field"></span></a></li>
+                  <li><a href="#">Product style<span class="nav-item-field"></span></a></li>
+                  <li><a href="#">Service style<span class="nav-item-field"></span></a></li>
+                  <li><a href="#">Portfolio style<span class="nav-item-field"></span></a></li>
+                  <li><a href="#">Showcase style<span class="nav-item-field"></span></a></li>
+                </ul>
               </li>
               <li>
                 <a href="#" class="nav-links">Portfolio<span class="nav-item-field"></span></a>
@@ -59,8 +70,15 @@
               <li>
                 <a href="#" class="nav-links">Features<span class="nav-item-field"></span></a>
               </li>
-              <li>
+              <li class="drop">
                 <a href="#" class="nav-links">Mega Menu<span class="nav-item-field"></span></a>
+                <div class="mega-menu-dropdown"></div>
+                <ul class="mega-menu-mob-dropdown">
+                  <li><a href="#">Focus on<span class="nav-item-field"></span></a></li>
+                  <li><a href="#">Special pages<span class="nav-item-field"></span></a></li>
+                  <li><a href="#">Latest works<span class="nav-item-field"></span></a></li>
+                  <li><a href="#">About us<span class="nav-item-field"></span></a></li>
+                </ul>
               </li>
               <li>
                 <a href="#" class="nav-links">Contact<span class="nav-item-field"></span></a>
@@ -74,18 +92,19 @@
                 <a href="#"><i class="icon-dribbble"></i></a>
               </li>
             </ul>
-          </nav>
-          <div class="aside-section">
-            <div class="search">
-              <input type="text" class="search-input">
-              <button type="button" class="searchBtn"><i class="icon-search"></i></button>
+
+            <div class="aside-section">
+              <div class="search">
+                <input type="text" class="search-input">
+                <button type="button" class="searchBtn"><i class="icon-search"></i></button>
+              </div>
+              <button class="hamburger hamburger--spin" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
             </div>
-            <button class="hamburger hamburger--spin" type="button">
-              <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-              </span>
-            </button>
-          </div>
+          </nav>
         </div>
       </div>
     </div>
@@ -93,23 +112,71 @@
   </header>
 
   <main>
-
-    <section class="intro">
-      <div class="title-box">
-        <h1>Made for designers</h1>
-        <p>Create your online portfolio in minutes with the professionally and lovingly designed REEN website template.
-          Customize your site with versatile and easy to use features.</p>
-        <button type="button" class="button startBtn">Get started now</button>
+    <section class="intro-section">
+      <div class="intro-slider slider">
+        <div class="intro-1">
+          <div class="container">
+            <div class="title-box">
+              <h1>Made for designers</h1>
+              <p>Create your online portfolio in minutes with the professionally and lovingly designed REEN website
+                template.
+                Customize your site with versatile and easy to use features.</p>
+              <button type="button" class="button startBtn">Get started now</button>
+            </div>
+          </div>
+        </div>
+        <div class="intro-2">
+          <div class="container">
+            <div class="title-box">
+              <h1>Fresh and beautiful<br>design</h1>
+              <p>REEN is designed to showcase your talent and put your work in the forefront. Professionally use of
+                typography and layout that fits your content.</p>
+              <button type="button" class="button startBtn">Get started now</button>
+            </div>
+          </div>
+        </div>
+        <div class="intro-3">
+          <div class="container">
+            <div class="title-box">
+              <h1><mark>Clean and</mark></h1>
+              <h1><mark>reusable code</mark></h1>
+              <p>The clean code allows you to easily copy code blocks from content modules and past them in different
+                places or layouts.</p>
+              <button type="button" class="button startBtn">Get started now</button>
+            </div>
+          </div>
+        </div>
+        <div class="intro-4">
+          <div class="container">
+            <div class="title-box">
+              <h1><mark>Just focus on</mark></h1>
+              <h1><mark>your creativity</mark></h1>
+              <p>Take a break from messing around with heavy coding and spend your time brainstorming ideas for your
+                next project.</p>
+              <button type="button" class="button startBtn">Get started now</button>
+            </div>
+          </div>
+        </div>
+        <div class="intro-5">
+          <div class="container">
+            <div class="title-box">
+              <h1>Showcase your content</h1>
+              <p>With REEN you have the possibility to create websites for various contents quickly and easily. Now
+                it's up to you!</p>
+              <button type="button" class="button startBtn">Get started now</button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="standart-section info">
       <div class="container">
         <div class="text-wrap">
-        <h2>Beautiful. Clean. Responsive</h2>
-        <p>REEN is a high-quality solution for those who want a beautiful website in no time. It's fully responsive
-          and will adapt itself to any mobile device. iPad, iPhone, Android, it doesn't matter.
-          Your content will always looks its absolute best.</p>
+          <h2>Beautiful. Clean. Responsive</h2>
+          <p>REEN is a high-quality solution for those who want a beautiful website in no time. It's fully responsive
+            and will adapt itself to any mobile device. iPad, iPhone, Android, it doesn't matter.
+            Your content will always looks its absolute best.</p>
         </div>
         <div class="flex-wrap">
           <div class="col">
@@ -145,54 +212,160 @@
         <h2>Check out our latest works</h2>
         <p>Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.</p>
         <div class="flex-wrap">
-          <div class="img-holder">
-            <img src="./assets/images/portfolio-ex-1.jpg" alt="example-1">
-            <h4>Grand Motel gets an identity brushup</h4>
-            <p>Identity</p>
-          </div>
-          <div class="img-holder">
-            <img src="./assets/images/portfolio-ex-2.jpg" alt="example-3">
-            <h4>Fresh branding for a creative startup</h4>
-            <p>Identity</p>
-          </div>
+          <a href="#" class="big-img">
+            <div class="img-holder">
+              <div class="img-wrap">
+                <img src="./assets/images/portfolio-ex-1.jpg" alt="example-1">
+                <div class="img-hover"><i class="icon-plus"></i></div>
+              </div>
+              <h4>Grand Motel gets an identity brushup</h4>
+              <p>Identity</p>
+            </div>
+          </a>
+          <a href="#" class="big-img">
+            <div class="img-holder">
+              <div class="img-wrap">
+                <img src="./assets/images/portfolio-ex-2.jpg" alt="example-3">
+                <div class="img-hover"><i class="icon-plus"></i></div>
+              </div>
+              <h4>Fresh branding for a creative startup</h4>
+              <p>Identity</p>
+            </div>
+          </a>
         </div>
-        <div class="multiple-items slider text-center">
-          <div>
-            <img src="./assets/images/slider-1.jpg" alt="slide-1">
-          </div>
-          <div>
-            <img src="./assets/images/slider-2.jpg" alt="slide-2">
-          </div>
-          <div>
-            <img src="./assets/images/slider-3.jpg" alt="slide-3">
-          </div>
-          <div>
-            <img src="./assets/images/slider-4.jpg" alt="slide-4">
-          </div>
-          <div>
-            <img src="./assets/images/slider-1.jpg" alt="slide-5">
-          </div>
-          <div>
-            <img src="./assets/images/slider-2.jpg" alt="slide-6">
-          </div>
-          <div>
-            <img src="./assets/images/slider-3.jpg" alt="slide-7">
-          </div>
-          <div>
-            <img src="./assets/images/slider-4.jpg" alt="slide-8">
-          </div>
-          <div>
-            <img src="./assets/images/slider-1.jpg" alt="slide-9">
-          </div>
-          <div>
-            <img src="./assets/images/slider-2.jpg" alt="slide-10">
-          </div>
-          <div>
-            <img src="./assets/images/slider-3.jpg" alt="slide-11">
-          </div>
-          <div>
-            <img src="./assets/images/slider-4.jpg" alt="slide-12">
-          </div>
+        <div class="portfolio-slider slider text-center">
+          <a href="#" class="small-img">
+            <div class="img-wrap">
+              <img src="./assets/images/slider-1.jpg" alt="slide-1">
+              <div class="img-hover">
+                <div class="text-wrap">
+                  <h5>Astor & Yancy</h5>
+                  <p>Identity</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="small-img">
+            <div class="img-wrap">
+              <img src="./assets/images/slider-2.jpg" alt="slide-2">
+              <div class="img-hover">
+                <div class="text-wrap">
+                  <h5>Astor & Yancy</h5>
+                  <p>Identity</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="small-img">
+            <div class="img-wrap">
+              <img src="./assets/images/slider-3.jpg" alt="slide-3">
+              <div class="img-hover">
+                <div class="text-wrap">
+                  <h5>Astor & Yancy</h5>
+                  <p>Identity</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="small-img">
+            <div class="img-wrap">
+              <img src="./assets/images/slider-4.jpg" alt="slide-4">
+              <div class="img-hover">
+                <div class="text-wrap">
+                  <h5>Astor & Yancy</h5>
+                  <p>Identity</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="small-img">
+            <div class="img-wrap">
+              <img src="./assets/images/slider-1.jpg" alt="slide-5">
+              <div class="img-hover">
+                <div class="text-wrap">
+                  <h5>Astor & Yancy</h5>
+                  <p>Identity</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="small-img">
+            <div class="img-wrap">
+              <img src="./assets/images/slider-2.jpg" alt="slide-6">
+              <div class="img-hover">
+                <div class="text-wrap">
+                  <h5>Astor & Yancy</h5>
+                  <p>Identity</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="small-img">
+            <div class="img-wrap">
+              <img src="./assets/images/slider-3.jpg" alt="slide-7">
+              <div class="img-hover">
+                <div class="text-wrap">
+                  <h5>Astor & Yancy</h5>
+                  <p>Identity</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="small-img">
+            <div class="img-wrap">
+              <img src="./assets/images/slider-4.jpg" alt="slide-8">
+              <div class="img-hover">
+                <div class="text-wrap">
+                  <h5>Astor & Yancy</h5>
+                  <p>Identity</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="small-img">
+            <div class="img-wrap">
+              <img src="./assets/images/slider-1.jpg" alt="slide-9">
+              <div class="img-hover">
+                <div class="text-wrap">
+                  <h5>Astor & Yancy</h5>
+                  <p>Identity</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="small-img">
+            <div class="img-wrap">
+              <img src="./assets/images/slider-2.jpg" alt="slide-10">
+              <div class="img-hover">
+                <div class="text-wrap">
+                  <h5>Astor & Yancy</h5>
+                  <p>Identity</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="small-img">
+            <div class="img-wrap">
+              <img src="./assets/images/slider-3.jpg" alt="slide-11">
+              <div class="img-hover">
+                <div class="text-wrap">
+                  <h5>Astor & Yancy</h5>
+                  <p>Identity</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="small-img">
+            <div class="img-wrap">
+              <img src="./assets/images/slider-4.jpg" alt="slide-12">
+              <div class="img-hover">
+                <div class="text-wrap">
+                  <h5>Astor & Yancy</h5>
+                  <p>Identity</p>
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </section>
