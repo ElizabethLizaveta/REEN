@@ -32,6 +32,10 @@
 
         .logo {
             margin-bottom: 1.437rem;
+
+            &:hover {
+                opacity: 0.5;
+            }
         }
 
         h5 {
@@ -62,15 +66,15 @@
 
         a {
             position: relative;
-            
+
             font-size: 14px;
             color: map-get($footer-top, 'section-font-color');
 
             &:hover {
-                color: map-get($font-colors, 'white');
+                color: map-get($base, 'link-hover');
             }
         }
- 
+
         address {
             font-size: 14px;
             line-height: 1.375rem;
@@ -113,6 +117,7 @@
         color: map-get($footer-nav, 'section-font-color');
         font-size: map-get($footer-nav, 'section-font-size');
         background: map-get($footer-nav, 'section-bg');
+        position: relative;
 
         .flex-wrap {
             @include media ("<tablet") {
@@ -122,9 +127,12 @@
         }
 
         .nav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
 
             @include media ("<tablet") {
-               margin-top: 10px;
+                margin-top: 10px;
             }
 
             a {
@@ -135,9 +143,9 @@
                 }
 
                 &:hover {
-                    color: map-get($font-colors, 'white');
+                    color: map-get($base, 'link-hover');
                 }
-
+                
                 span.nav-dot {
                     margin: 9px;
 
@@ -147,5 +155,43 @@
                 }
             }
         }
+
+        .scrollBtn {
+            padding: 5px 5px 3px 5px;
+            color: map-get($slider, 'arrow-color');
+            opacity: 0.25;
+            background: map-get($slider, 'arrow-bg');
+            font-size: 28px;
+            border-radius: 5px;
+
+            &:hover {
+                color: map-get($slider, 'arrow-hover');
+                opacity: 1;
+            }
+
+            &.widescreen {
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+
+                @include media ("<1340px") {
+                    display: none;
+                }
+            }
+
+            &.desktop {
+                display: none;
+                margin-left: 20px;
+
+                @include media ("<1340px") {
+                    display: block;
+                }
+
+                @include media ("<desktop") {
+                    display: none;
+                }
+            }
+        }    
     }
 }

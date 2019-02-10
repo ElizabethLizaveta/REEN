@@ -48,6 +48,7 @@ $header-top: (
 );
 
 $header-nav: (
+  'section-bg': #fff,
   'section-font-size': 0.937rem,
   'section-font-family': unquote("'Source Sans Pro', sans-serif"),
   'section-font-color': #506a85,
@@ -57,6 +58,8 @@ $header-nav: (
   'icons-bg': #dedede,
   'dropdown-bg': #f5f7fa,
   'dropdown-border': #e6e9ed,
+  'dropdown-shadow': rgba(#e6e9ed, 0.6),
+  'fixed-header-border': #e6e9ed,
 );
 
 $home-dropdown: (

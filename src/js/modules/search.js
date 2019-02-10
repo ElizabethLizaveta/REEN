@@ -1,8 +1,4 @@
-// This is an examples of simple export.
-//
-// You can remove or add your own function in this file.
-
-const searchNav = {
+const SearchNav = {
   search() {
     const iconSearch = $('.searchBtn');
     const inputSearch = $('.search-input');
@@ -22,4 +18,4 @@ const searchNav = {
   },
 };
 
-export default searchNav;
+export default SearchNav;

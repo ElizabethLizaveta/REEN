@@ -1,5 +1,7 @@
 .header-nav {
     padding: 1.8rem 0;
+    background: map-get($header-nav, 'section-bg');
+    z-index: 20;
 
     @include media ("<widescreen") {
         padding: 1.2rem 0;
@@ -41,14 +43,9 @@
             display: flex;
             width: 100%;
             margin: 0;
-            padding: 0 20px 0 50px;
             flex-direction: row;
             justify-content: center;
             z-index: 5;
-
-            @include media ("<widescreen") {
-                padding: 0 5px 0 15px;
-            }
 
             @include media ("<desktop") {
                 flex-direction: column;
@@ -104,7 +101,7 @@
                             background: map-get($header-nav, 'dropdown-bg');
                             border: 1px solid map-get($header-nav, 'dropdown-border');
                             border-bottom: none;
-                            box-shadow: 5px 0px 10px -3px #f5f7fa, -5px 0px 10px -3px #f5f7fa;
+                            box-shadow: 5px 0px 5px -3px map-get($header-nav, 'dropdown-shadow'), -5px 0px 5px -3px map-get($header-nav, 'dropdown-shadow');
                             border-radius: 5px 5px 0 0px;
                         }
                     }
@@ -115,7 +112,9 @@
 
                     .mega-menu-dropdown {
                         @include media (">=desktop") {
-                        display: block;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
                         }
                     }
 
@@ -195,6 +194,7 @@
                 left: -1px;
                 background: map-get($home-dropdown, 'dropdown-bg');
                 border: 1px solid map-get($home-dropdown, 'dropdown-border');
+                box-shadow: 3px 5px 5px 0px map-get($header-nav, 'dropdown-shadow'), -3px 0px 5px 0px map-get($header-nav, 'dropdown-shadow');
                 border-radius: 0px 5px 5px 5px;
                 z-index: -1;
 
@@ -211,6 +211,7 @@
                     top: 15px;
                     border: none;
                     border-radius: 0px;
+                    box-shadow: none;
                     background: map-get($home-dropdown, 'dropdown-mob-bg');
                     z-index: 1;
                 }
@@ -242,6 +243,7 @@
                 }
 
                 li:first-child {
+
                     &:hover,
                     &:focus {
                         border-radius: 0px 5px 0px 0px;
@@ -253,6 +255,7 @@
                 }
 
                 li:last-child {
+
                     &:hover,
                     &:focus {
                         border-radius: 0px 0px 5px 5px;
@@ -281,11 +284,12 @@
             .mega-menu-dropdown {
                 display: none;
                 padding: 0;
-                height: 26.25rem;
                 width: 100%;
                 background: map-get($mega-menu-dropdown, 'dropdown-bg');
                 border: 1px solid map-get($mega-menu-dropdown, 'dropdown-border');
+                box-shadow: 3px 5px 5px 0px map-get($header-nav, 'dropdown-shadow'), -3px 0px 5px 0px map-get($header-nav, 'dropdown-shadow');
                 border-radius: 5px;
+                padding: 2.1rem 2.5rem;
                 position: absolute;
                 top: 57px;
                 left: 0px;
@@ -302,10 +306,84 @@
                 &:hover,
                 &:focus {
                     @include media (">=desktop") {
-                        display: block;
+                        flex-direction: row;
+                        justify-content: space-between;
                     }
                 }
 
+                img {
+                    width: 100%;
+                }
+
+                .col {
+                    width: 21%;
+                }
+
+                .col-2,
+                .col-5 {
+                    width: 24%;
+                }
+
+                h5 {
+                    margin-bottom: 1.93rem;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    font-size: 14px;
+                    margin: 1.68rem 0;
+                    line-height: 1.37rem;
+                }
+
+                .viewBtn {
+                    font-size: 0.875rem;
+                    letter-spacing: 0.03em;
+                    padding: 0.8rem 1.18rem;
+                }
+
+                .pages-list {
+                    padding: 0;
+
+                    li {
+                        padding: 0;
+                        margin: 0.687rem 0;
+                        font-size: 14px;
+                    }
+
+                    li:before {
+                        content: '\25E6';
+                        color: #00bc9c;
+                        padding-right: 0.8em;
+                        font-size: 14px;
+                    }
+
+                    a {
+                        font-family: map-get($base, 'base-font');
+                        font-size: 14px;
+                        text-transform: none;
+                        font-weight: 500;
+                    }
+                }
+
+                .portfolio-box {
+                    position: relative;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    max-width: 100%;
+
+                    .small-img {
+                        width: 49%;
+                        margin-bottom: 3px;
+                    }
+                }
+
+                .readBtn {
+                    font-size: 0.875rem;
+                    letter-spacing: 0.03em;
+                    padding: 0.8rem 1.18rem;
+                }
             }
 
             .mega-menu-mob-dropdown {
@@ -453,7 +531,44 @@
             .search-input {
                 opacity: 0.6;
             }
-
         }
+    }
+
+    //FIXED ON SCROLL
+    &.fixed-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        border-bottom: 1px solid map-get($header-nav, 'fixed-header-border');
+        box-shadow: 0px 0px 10px 0px map-get($header-nav, 'dropdown-shadow');
+
+        @include media ("<desktop") {
+            padding: 10px 0;
+        }
+
+        .logo {
+            max-width: 80px;
+            height: auto;
+        }
+
+        .aside-section {
+            
+            .search-input {
+                width: 100%;
+            }
+
+            .search {
+                display: none;
+            }
+        }
+
+        .main-nav {
+            @include media ("<desktop") {
+                top: 37px;
+            }
+        }
+
     }
 }
