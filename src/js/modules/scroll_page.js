@@ -1,6 +1,6 @@
 const ScrollPage = {
   scrollTop() {
-    const scrollBtn = $('.scrollBtn');
+    const scrollBtn = $('.scroll-btn');
 
     scrollBtn.click(() => {
       $('html, body').animate({ scrollTop: 0 }, 'slow');

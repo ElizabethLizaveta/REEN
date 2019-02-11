@@ -7,13 +7,11 @@
     i {
         font-family: map-get($header-top, 'section-font');
         font-size: map-get($header-top, 'section-font-size');
-        font-weight: 600;
     }
 
     .social {
         height: 40px;
         display: flex;
-
 
         a {
             display: flex;

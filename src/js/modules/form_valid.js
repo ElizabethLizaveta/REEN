@@ -4,7 +4,7 @@ const FormValid = {
   validateEmail() {
     const result = $('#result');
     const email = $('#InputEmail');
-    const submitBtn = $('.subscribeBtn');
+    const submitBtn = $('.subscribe-btn');
     submitBtn.attr('disabled', true);
 
 

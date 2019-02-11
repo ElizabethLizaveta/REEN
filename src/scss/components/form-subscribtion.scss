@@ -16,6 +16,7 @@
             background: map-get($forms, 'form-input-bg');
             font-size: map-get($forms, 'form-font-size');
             color: map-get($forms, 'input-font-color');
+            vertical-align: middle;
 
             @include media ("<widescreen") {
                 height: 40px;
@@ -27,7 +28,9 @@
             }
         }
 
-        .subscribeBtn {
+        .subscribe-btn {
+            @extend .button;
+
             padding: 0.68rem;
             position: absolute;
             top: 50%;

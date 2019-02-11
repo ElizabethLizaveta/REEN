@@ -335,7 +335,9 @@
                     line-height: 1.37rem;
                 }
 
-                .viewBtn {
+                .view-btn {
+                    @extend .button;
+
                     font-size: 0.875rem;
                     letter-spacing: 0.03em;
                     padding: 0.8rem 1.18rem;
@@ -373,13 +375,15 @@
                     justify-content: space-between;
                     max-width: 100%;
 
-                    .small-img {
+                    .img-holder {
                         width: 49%;
                         margin-bottom: 3px;
                     }
                 }
 
-                .readBtn {
+                .read-btn {
+                    @extend .button;
+
                     font-size: 0.875rem;
                     letter-spacing: 0.03em;
                     padding: 0.8rem 1.18rem;
@@ -470,7 +474,7 @@
             width: 100%;
         }
 
-        .searchBtn {
+        .search-btn {
             padding: 0 0 0 5px;
 
             .icon-search {
@@ -498,6 +502,7 @@
             opacity: 0;
             height: 10px;
             width: 170px;
+            border: 1px solid #506a85;
             border-radius: 200px;
             flex-grow: 1;
             color: map-get($header-nav, 'section-font-color');
@@ -554,11 +559,6 @@
         }
 
         .aside-section {
-            
-            .search-input {
-                width: 100%;
-            }
-
             .search {
                 display: none;
             }

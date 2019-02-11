@@ -1,6 +1,6 @@
 const SearchNav = {
   search() {
-    const iconSearch = $('.searchBtn');
+    const iconSearch = $('.search-btn');
     const inputSearch = $('.search-input');
 
     iconSearch.click(() => {

@@ -17,14 +17,9 @@ textarea {
   -webkit-appearance: none;
   -webkit-border-radius: 0;
   box-sizing: border-box;
-  border: 1px solid map-get($forms, 'form-input-border');
   padding: map-get($forms, 'form-element-padding');
   font-family: map-get($forms, 'form-font-family');
   font-size: map-get($forms, 'form-font-size');
-
-  @include placeholder {
-    color: map-get($forms, 'placeholder-color');
-  }
 }
 
 select {
@@ -33,7 +28,7 @@ select {
 
 textarea {
   resize: vertical;
-  vertical-align: top;
+  vertical-align: middle;
 }
 
 button:not([disabled]),

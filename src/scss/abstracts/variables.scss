@@ -88,15 +88,13 @@ $intro: (
   'slide-5-font-color': #fff,
 );
 
-$standart-section:(
-  'section-font-size': 1.375rem,
-);
-
 $info: (
+  'section-font-size': 1.375rem,
   'icons-bg': #00bc9c,
 );
 
 $portfolio: (
+  'section-font-size': 1.375rem,
   'section-bg': #f2f5f7,
   'img-holder-bg': #fff,
   'section-border': #e6e9ed,
@@ -114,9 +112,13 @@ $slider: (
   'dots-active-color': #00bc9c,
 );
 
+$connect: (
+  'section-font-size': 1.375rem,
+);
+
 $forms: (
   'form-font-family': unquote("'Source Sans Pro', sans-serif"),
-  'input-font-color': #a3b1bf,
+  'input-font-color': #fff,
   'placeholder-font-color': #a3b1bf,
   'form-element-padding': 12px,
   'form-input-bg': #4e5c6c,

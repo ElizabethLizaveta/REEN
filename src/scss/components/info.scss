@@ -1,29 +1,88 @@
 .info {
-        .flex-wrap {
-            @include media ("<tablet") {
-                flex-direction: column;
-            }
+    padding: 7.93rem 0;
+    text-align: center;
+
+    @include media ("<desktop") {
+        padding: 5rem 0;
+    }
+
+    @include media ("<tablet") {
+        padding: 3rem 0;
+    }
+
+    .flex-wrap {
+        @include media ("<tablet") {
+            flex-direction: column;
         }
+    }
 
     .text-wrap {
         max-width: 790px;
         padding: 0 15px;
         margin: 0 auto;
+        font-size: map-get($info, 'section-font-size');
+        line-height: 2.125rem;
+        letter-spacing: 0.01em;
+
+        @include media ("<tablet") {
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+        }
+
+        h2 {
+            margin-bottom: 2.43rem;
+
+            @include media ("<tablet") {
+                font-size: 2.4rem;
+            }
+
+            @include media ("<phone") {
+                font-size: 1.7rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        p {
+            margin-bottom: 4.625rem;
+
+            @include media ("<tablet") {
+                margin-bottom: 2.5rem;
+            }
+        }
     }
 
     .col {
-        position: relative;
+        display: flex;
         width: 31%;
         text-align: left;
+        font-size: 16px;
+        line-height: 1.562rem;
+        letter-spacing: 0.01em;
 
         @include media ("<tablet") {
             width: 100%;
         }
 
+        &-left {
+            width: 65px;
+
+            @include media ("<tablet") {
+                font-size: 50px;
+            }
+
+            @include media ("<phone") {
+                font-size: 40px;
+            }
+        }
+
+        &-right {
+            width: 100%;
+            padding-left: 30px;
+        }
+
         i {
-            position: absolute;
             font-size: 65px;
-            color: map-get($info , 'icons-bg');
+            color: map-get($info, 'icons-bg');
 
             @include media ("<tablet") {
                 font-size: 50px;
@@ -35,29 +94,16 @@
         }
 
         h3 {
-            display: inline-block;
-            margin-left: 80px;
             margin-bottom: 1.68rem;
 
             @include media ("<phone") {
                 font-size: 1.5rem;
                 margin-bottom: 0.8rem;
-                margin-left: 60px;
-             }
+            }
         }
 
         p {
-            margin-left: 80px;
             margin-bottom: 20px;
-            font-size: 16px;
-            line-height: 1.562rem;
-            letter-spacing: 0.01em;
-
-            @include media ("<phone") {
-                margin-left: 60px;
-            }
         }
     }
-
-
 }
