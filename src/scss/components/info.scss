@@ -30,6 +30,9 @@
         }
 
         h2 {
+            font-size: map-get($headings, 'h2-font-size');
+            line-height: 3.375rem;
+            letter-spacing: 0.01em;
             margin-bottom: 2.43rem;
 
             @include media ("<tablet") {
@@ -81,6 +84,9 @@
         }
 
         h3 {
+            font-size: map-get($headings, 'h3-font-size');
+            line-height: 2.125rem;
+            letter-spacing: 0.02em;
             margin-bottom: 1.68rem;
 
             @include media ("<phone") {

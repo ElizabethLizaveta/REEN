@@ -174,8 +174,7 @@
                 }
             }
 
-            //DROPDOWN
-
+            /* dropdown */
             .home-dropdown {
                 display: none;
                 padding: 0;
@@ -317,6 +316,9 @@
                 }
 
                 h5 {
+                    font-size: map-get($headings, 'h5-font-size');
+                    line-height: 1.375rem;
+                    letter-spacing: 0.01em;
                     margin-bottom: 1.93rem;
                     text-transform: uppercase;
                 }
@@ -525,7 +527,7 @@
         }
     }
 
-    //FIXED ON SCROLL
+    /* fixed on scroll */
     &.fixed-header {
         position: fixed;
         top: 0;

@@ -23,36 +23,6 @@ h5 {
   margin: 0;
 }
 
-h1 {
-  font-size: map-get($headings, 'h1-font-size');
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-}
-
-h2 {
-  font-size: map-get($headings, 'h2-font-size');
-  line-height: 3.375rem;
-  letter-spacing: 0.01em;
-}
-
-h3 {
-  font-size: map-get($headings, 'h3-font-size');
-  line-height: 2.125rem;
-  letter-spacing: 0.02em;
-}
-
-h4 {
-  font-size: map-get($headings, 'h4-font-size');
-  line-height: 1.625rem;
-  letter-spacing: 0.02em;
-}
-
-h5 {
-  font-size: map-get($headings, 'h5-font-size');
-  line-height: 1.375rem;
-  letter-spacing: 0.01em;
-}
-
 p {
   margin: 0;
   font-family: map-deep-get($fonts, 'base-font');

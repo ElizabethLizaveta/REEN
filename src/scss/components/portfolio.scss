@@ -24,6 +24,9 @@
 	}
 
 	h2 {
+		font-size: map-get($headings, 'h2-font-size');
+        line-height: 3.375rem;
+        letter-spacing: 0.01em;
         margin-bottom: 2.43rem;
 
         @include media ("<tablet") {
@@ -51,6 +54,9 @@
 		border: 1px solid map-get($portfolio, 'section-border');
 
 		h4 {
+			font-size: map-get($headings, 'h4-font-size');
+            line-height: 1.625rem;
+            letter-spacing: 0.02em;
 			margin-top: 2.06rem;
 			margin-bottom: 0.6rem;
 
@@ -74,6 +80,9 @@
 				color: white;
 					
 				h5 {
+					font-size: map-get($headings, 'h5-font-size');
+                    line-height: 1.375rem;
+                    letter-spacing: 0.01em;
 					margin-bottom: 0.6rem;
 				}
 
