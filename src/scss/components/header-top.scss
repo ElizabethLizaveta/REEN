@@ -12,6 +12,9 @@
     .social {
         height: 40px;
         display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
 
         a {
             display: flex;
@@ -19,7 +22,7 @@
             height: 100%;
             padding: 0.5rem;
 
-            @include media ("<tablet") {
+            @include media ("<desktop") {
                 display: none;
             }
 
@@ -77,12 +80,15 @@
                 }
             }
         }
+
     }
 
     .contact {
         height: 40px;
         display: flex;
         align-items: center;
+        margin: 0;
+        padding: 0;
 
         a {
             margin-right: 1.3rem;

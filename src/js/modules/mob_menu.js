@@ -4,8 +4,10 @@ const MobMenu = {
   menuOpen() {
     const hamburgerBtn = $('.hamburger');
     const mainNav = $('.main-nav');
-    const homeDrop = $('.home-dropdown');
-    const megamenuDrop = $('.mega-menu-mob-dropdown');
+    const homeDropdown = $('.home-dropdown');
+    const megamenuDropdown = $('.mega-menu-mob-dropdown');
+    const homeDrop = $('.drop-home');
+    const megamenuDrop = $('.drop-menu');
 
     hamburgerBtn.click(() => {
       mainNav.toggleClass('active-menu');
@@ -20,21 +22,33 @@ const MobMenu = {
       $(e.currentTarget).addClass('is-selected');
     });
 
-    mainNav.on('click', 'li:not(.search-mobile)', () => {
+    mainNav.on('click', 'li:not(.search-mobile):not(.drop)', () => {
       if (mainNav.hasClass('active-menu')) {
         mainNav.toggleClass('active-menu');
         hamburgerBtn.toggleClass('is-active');
       }
     });
 
-    homeDrop.on('click', 'li:not(.is-selected)', (e) => {
-      homeDrop.find('.is-selected').removeClass('is-selected');
+    homeDropdown.on('click', 'li:not(.is-selected)', (e) => {
+      homeDropdown.find('.is-selected').removeClass('is-selected');
       $(e.currentTarget).addClass('is-selected');
     });
 
-    megamenuDrop.on('click', 'li:not(.is-selected)', (e) => {
-      megamenuDrop.find('.is-selected').removeClass('is-selected');
+    megamenuDropdown.on('click', 'li:not(.is-selected)', (e) => {
+      megamenuDropdown.find('.is-selected').removeClass('is-selected');
       $(e.currentTarget).addClass('is-selected');
+    });
+
+    homeDrop.click(() => {
+      if ($(window).width() < 980) {
+        homeDropdown.slideToggle();
+      }
+    });
+
+    megamenuDrop.click(() => {
+      if ($(window).width() < 980) {
+        megamenuDropdown.slideToggle();
+      }
     });
   },
 };

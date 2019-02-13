@@ -303,7 +303,6 @@ $animation-speed: 0.3s !default;
   justify-content: space-between; 
 }
 
-/// Setting background-image
-@mixin backgroundShorthand($img, $position:50% 50%, $size:cover) {
-  background: #506a85 url(#{$imgpath}/#{$img}) $position/$size;
-}
+ 
+
+

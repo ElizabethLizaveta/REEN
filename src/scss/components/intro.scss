@@ -75,10 +75,10 @@
 
 .intro-1 {
     @extend .intro;
-    @include backgroundShorthand('/intro-bg.jpg');
-
+    
     padding-top: 17.5rem;
     color: map-get($intro, 'slide-1-font-color');
+    background: 50% 50%/cover;
 
     @include media ("<widescreen") {
         padding-top: 13rem;
@@ -102,10 +102,10 @@
 
 .intro-2 {
     @extend .intro;
-    @include backgroundShorthand('/intro-bg-2.jpg');
 
     padding-top: 15rem;
     color: map-get($intro, 'slide-2-font-color');
+    background: 50% 50%/cover;
 
     @include media ("<widescreen") {
         padding-top: 11rem;
@@ -132,10 +132,10 @@
 
 .intro-3 {
     @extend .intro;
-    @include backgroundShorthand('/intro-bg-3.jpg');
 
     padding-top: 12rem;
     color: map-get($intro, 'slide-3-font-color');
+    background: 50% 50%/cover;
 
     @include media ("<widescreen") {
         padding-top: 9.5rem;
@@ -176,10 +176,10 @@
 
 .intro-4 {
     @extend .intro;
-    @include backgroundShorthand('/intro-bg-4.jpg');
 
     padding-top: 5.31rem;
     color: map-get($intro, 'slide-4-font-color');
+    background: 50% 50%/cover;
 
     @include media ("<widescreen") {
         padding-top: 4.5rem;
@@ -222,10 +222,10 @@
 
 .intro-5 {
     @extend .intro;
-    @include backgroundShorthand('/intro-bg-5.jpg');
 
     padding-top: 5.31rem;
     color: map-get($intro, 'slide-5-font-color');
+    background: 50% 50%/cover;
 
    
     @include media ("<widescreen") {

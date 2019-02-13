@@ -18,18 +18,18 @@
     <div class="header-top">
       <div class="container">
         <div class="flex-wrap">
-          <div class="contact">
-            <a href="#" class="mail"><i class="icon-envelope-o"></i>info@reen.com</a>
-            <a href="#" class="mobile"><i class="icon-mobile2"></i>+00 (123) 456 78 90</a>
-          </div>
-          <div class="social">
-            <a href="#" class="facebook-link"><i class="icon-facebook"></i></a>
-            <a href="#" class="google-link"><i class="icon-google"></i></a>
-            <a href="#" class="twitter-link"><i class="icon-twitter"></i></a>
-            <a href="#" class="pinterest-link"><i class="icon-pinterest"></i></a>
-            <a href="#" class="behance-link"><i class="icon-behance"></i></a>
-            <a href="#" class="dribbble-link"><i class="icon-dribbble"></i></a>
-          </div>
+          <ul class="contact">
+            <li><a href="#" class="mail"><i class="icon-envelope-o"></i>info@reen.com</a></li>
+            <li><a href="#" class="mobile"><i class="icon-mobile2"></i>+00 (123) 456 78 90</a></li>
+          </ul>
+          <ul class="social">
+            <li><a href="#" class="facebook-link"><i class="icon-facebook"></i></a></li>
+            <li><a href="#" class="google-link"><i class="icon-google"></i></a></li>
+            <li><a href="#" class="twitter-link"><i class="icon-twitter"></i></a></li>
+            <li><a href="#" class="pinterest-link"><i class="icon-pinterest"></i></a></li>
+            <li><a href="#" class="behance-link"><i class="icon-behance"></i></a></li>
+            <li><a href="#" class="dribbble-link"><i class="icon-dribbble"></i></a></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -39,7 +39,7 @@
         <div class="flex-wrap">
           <nav class="navbar">
             <div class="logo">
-              <a href="#"><img src="assets/images/reen-logo.jpg" alt="logo"></a>
+              <a href="#"><img src="assets/images/reen-logo.jpg" alt="Reen"></a>
             </div>
             <ul class="main-nav">
               <li class="search-mobile">
@@ -70,14 +70,14 @@
               <li>
                 <a href="#" class="nav-links">Features<span class="nav-item-field"></span></a>
               </li>
-              <li class="drop">
+              <li class="drop drop-menu">
                 <a href="#" class="nav-links">Mega Menu<span class="nav-item-field"></span></a>
                 <div class="mega-menu-dropdown">
                   <div class="col">
                     <h5>Focus on</h5>
                     <a href="#" class="img-holder">
                       <div class="img-wrap">
-                        <img src="./assets/images/megamenu-focus-img.jpg" alt="megamenu-img">
+                        <img src="assets/images/megamenu-focus-img.jpg" alt="megamenu-img">
                         <div class="img-hover"><i class="icon-plus"></i></div>
                       </div>
                     </a>
@@ -105,37 +105,37 @@
                     <div class="portfolio-box">
                       <a href="#" class="img-holder">
                         <div class="img-wrap">
-                          <img src="./assets/images/megamenu-img-1.jpg" alt="portfolio-1">
+                          <img src="assets/images/megamenu-img-1.jpg" alt="portfolio-1">
                           <div class="img-hover"><i class="icon-plus"></i></div>
                         </div>
                       </a>
                       <a href="#" class="img-holder">
                         <div class="img-wrap">
-                          <img src="./assets/images/megamenu-img-2.jpg" alt="portfolio-2">
+                          <img src="assets/images/megamenu-img-2.jpg" alt="portfolio-2">
                           <div class="img-hover"><i class="icon-plus"></i></div>
                         </div>
                       </a>
                       <a href="#" class="img-holder">
                         <div class="img-wrap">
-                          <img src="./assets/images/megamenu-img-3.jpg" alt="portfolio-3">
+                          <img src="assets/images/megamenu-img-3.jpg" alt="portfolio-3">
                           <div class="img-hover"><i class="icon-plus"></i></div>
                         </div>
                       </a>
                       <a href="#" class="img-holder">
                         <div class="img-wrap">
-                          <img src="./assets/images/megamenu-img-4.jpg" alt="portfolio-4">
+                          <img src="assets/images/megamenu-img-4.jpg" alt="portfolio-4">
                           <div class="img-hover"><i class="icon-plus"></i></div>
                         </div>
                       </a>
                       <a href="#" class="img-holder">
                         <div class="img-wrap">
-                          <img src="./assets/images/megamenu-img-5.jpg" alt="portfolio-5">
+                          <img src="assets/images/megamenu-img-5.jpg" alt="portfolio-5">
                           <div class="img-hover"><i class="icon-plus"></i></div>
                         </div>
                       </a>
                       <a href="#" class="img-holder">
                         <div class="img-wrap">
-                          <img src="./assets/images/megamenu-img-6.jpg" alt="portfolio-6">
+                          <img src="assets/images/megamenu-img-6.jpg" alt="portfolio-6">
                           <div class="img-hover"><i class="icon-plus"></i></div>
                         </div>
                       </a>
@@ -190,6 +190,142 @@
   </header>
 
   <main>
+    <style>
+      .intro-1 {
+          background-image: url('assets/images/intro-bg-1-small.jpg');
+      }
+      .intro-2 {
+          background-image: url('assets/images/intro-bg-2-small.jpg');
+      }
+      .intro-3 {
+          background-image: url('assets/images/intro-bg-3-small.jpg');
+      }
+      .intro-4 {
+          background-image: url('assets/images/intro-bg-4-small.jpg');
+      }
+      .intro-5 {
+          background-image: url('assets/images/intro-bg-5-small.jpg');
+      }
+      @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+        .intro-1 {
+          background-image: url('assets/images/intro-bg-1-small@2x.jpg');
+        }
+        .intro-2 {
+          background-image: url('assets/images/intro-bg-2-small@2x.jpg');
+        }
+        .intro-3 {
+          background-image: url('assets/images/intro-bg-3-small@2x.jpg');
+        }
+        .intro-4 {
+          background-image: url('assets/images/intro-bg-4-small@2x.jpg');
+        }
+        .intro-5 {
+          background-image: url('assets/images/intro-bg-5-small@2x.jpg');
+        }
+      } 
+      @media (min-width: 480px){
+        .intro-1 {
+          background-image: url('assets/images/intro-bg-1-medium.jpg');
+        }
+        .intro-2 {
+          background-image: url('assets/images/intro-bg-2-medium.jpg');
+        }
+        .intro-3 {
+          background-image: url('assets/images/intro-bg-3-medium.jpg');
+        }
+        .intro-4 {
+          background-image: url('assets/images/intro-bg-4-medium.jpg');
+        }
+        .intro-5 {
+          background-image: url('assets/images/intro-bg-5-medium.jpg');
+        }
+      }  
+      @media (min-width: 480px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 480px) and (min-resolution: 144dpi) {
+        .intro-1 {
+          background-image: url('assets/images/intro-bg-1-medium@2x.jpg');
+        }
+        .intro-2 {
+          background-image: url('assets/images/intro-bg-2-medium@2x.jpg');
+        }
+        .intro-3 {
+          background-image: url('assets/images/intro-bg-3-medium@2x.jpg');
+        }
+        .intro-4 {
+          background-image: url('assets/images/intro-bg-4-medium@2x.jpg');
+        }
+        .intro-5 {
+          background-image: url('assets/images/intro-bg-5-medium@2x.jpg');
+        }
+      }
+      @media (min-width: 768px){
+        .intro-1 {
+          background-image: url('assets/images/intro-bg-1-large.jpg');
+        }
+        .intro-2 {
+          background-image: url('assets/images/intro-bg-2-large.jpg');
+        }
+        .intro-3 {
+          background-image: url('assets/images/intro-bg-3-large.jpg');
+        }
+        .intro-4 {
+          background-image: url('assets/images/intro-bg-4-large.jpg');
+        }
+        .intro-5 {
+          background-image: url('assets/images/intro-bg-5-large.jpg');
+        }
+      } 
+      @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi) {
+        .intro-1 {
+          background-image: url('assets/images/intro-bg-1-large@2x.jpg');
+        }
+        .intro-2 {
+          background-image: url('assets/images/intro-bg-2-large@2x.jpg');
+        }
+        .intro-3 {
+          background-image: url('assets/images/intro-bg-3-large@2x.jpg');
+        }
+        .intro-4 {
+          background-image: url('assets/images/intro-bg-4-large@2x.jpg');
+        }
+        .intro-5 {
+          background-image: url('assets/images/intro-bg-5-large@2x.jpg');
+        }
+      }
+      @media (min-width: 1200px){
+        .intro-1 {
+          background-image: url('assets/images/intro-bg-1-extralarge.jpg');
+        }
+        .intro-2 {
+          background-image: url('assets/images/intro-bg-2-extralarge.jpg');
+        }
+        .intro-3 {
+          background-image: url('assets/images/intro-bg-3-extralarge.jpg');
+        }
+        .intro-4 {
+          background-image: url('assets/images/intro-bg-4-extralarge.jpg');
+        }
+        .intro-5 {
+          background-image: url('assets/images/intro-bg-5-extralarge.jpg');
+        }
+      }  
+      @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi) {
+        .intro-1 {
+          background-image: url('assets/images/intro-bg-1-extralarge@2x.jpg');
+        }
+        .intro-2 {
+          background-image: url('assets/images/intro-bg-2-extralarge@2x.jpg');
+        }
+        .intro-3 {
+          background-image: url('assets/images/intro-bg-3-extralarge@2x.jpg');
+        }
+        .intro-4 {
+          background-image: url('assets/images/intro-bg-4-extralarge@2x.jpg');
+        }
+        .intro-5 {
+          background-image: url('assets/images/intro-bg-5-extralarge@2x.jpg');
+        }
+      }
+    </style>
     <section class="intro-section">
       <div class="intro-slider slider">
         <div class="intro-1">
@@ -259,7 +395,7 @@
         <div class="flex-wrap">
           <div class="col">
             <div class="col-left">
-              <i class="icon-heart-o"></i>
+              <img src="assets/images/info-icon-1.jpg" alt="icon-heart">
             </div>
             <div class="col-right">
               <h3>Passion</h3>
@@ -271,7 +407,7 @@
           </div>
           <div class="col">
             <div class="col-left">
-              <i class="icon-light-bulb"></i>
+              <img src="assets/images/info-icon-2.jpg" alt="icon-light">
             </div>
             <div class="col-right">
               <h3>Creativity</h3>
@@ -285,7 +421,7 @@
           </div>
           <div class="col">
             <div class="col-left">
-              <i class="icon-star"></i>
+              <img src="assets/images/info-icon-3.jpg" alt="icon-star">
             </div>
             <div class="col-right">
               <h3>Quality</h3>
@@ -307,7 +443,11 @@
         <div class="flex-wrap">
           <a href="#" class="img-holder big-img">
             <div class="img-wrap">
-              <img src="./assets/images/portfolio-ex-1.jpg" alt="example-1">
+              <picture>
+                <img src="assets/images/portfolio-ex-1.jpg"
+                    srcset="assets/images/portfolio-ex-1.jpg,
+                    assets/images/portfolio-ex-1@2x.jpg 2x" alt="example-1">
+              </picture>
               <div class="img-hover"><i class="icon-plus"></i></div>
             </div>
             <h4>Grand Motel gets an identity brushup</h4>
@@ -315,7 +455,11 @@
           </a>
           <a href="#" class="img-holder big-img">
             <div class="img-wrap">
-              <img src="./assets/images/portfolio-ex-2.jpg" alt="example-3">
+              <picture>
+                <img src="assets/images/portfolio-ex-2.jpg"
+                    srcset="assets/images/portfolio-ex-2.jpg,
+                    assets/images/portfolio-ex-2@2x.jpg 2x" alt="example-2">
+              </picture>
               <div class="img-hover"><i class="icon-plus"></i></div>
             </div>
             <h4>Fresh branding for a creative startup</h4>
@@ -325,7 +469,7 @@
         <div class="portfolio-slider slider text-center">
           <a href="#" class="img-holder">
             <div class="img-wrap">
-              <img src="./assets/images/slider-1.jpg" alt="slide-1">
+              <img src="assets/images/slider-1.jpg" alt="slide-1">
               <div class="img-hover">
                 <div class="text-wrap">
                   <h5>Astor &amp; Yancy</h5>
@@ -336,7 +480,7 @@
           </a>
           <a href="#" class="img-holder">
             <div class="img-wrap">
-              <img src="./assets/images/slider-2.jpg" alt="slide-2">
+              <img src="assets/images/slider-2.jpg" alt="slide-2">
               <div class="img-hover">
                 <div class="text-wrap">
                   <h5>Astor &amp; Yancy</h5>
@@ -347,7 +491,7 @@
           </a>
           <a href="#" class="img-holder">
             <div class="img-wrap">
-              <img src="./assets/images/slider-3.jpg" alt="slide-3">
+              <img src="assets/images/slider-3.jpg" alt="slide-3">
               <div class="img-hover">
                 <div class="text-wrap">
                   <h5>Astor &amp; Yancy</h5>
@@ -358,7 +502,7 @@
           </a>
           <a href="#" class="img-holder">
             <div class="img-wrap">
-              <img src="./assets/images/slider-4.jpg" alt="slide-4">
+              <img src="assets/images/slider-4.jpg" alt="slide-4">
               <div class="img-hover">
                 <div class="text-wrap">
                   <h5>Astor &amp; Yancy</h5>
@@ -369,7 +513,7 @@
           </a>
           <a href="#" class="img-holder">
             <div class="img-wrap">
-              <img src="./assets/images/slider-1.jpg" alt="slide-5">
+              <img src="assets/images/slider-1.jpg" alt="slide-5">
               <div class="img-hover">
                 <div class="text-wrap">
                   <h5>Astor &amp; Yancy</h5>
@@ -380,7 +524,7 @@
           </a>
           <a href="#" class="img-holder">
             <div class="img-wrap">
-              <img src="./assets/images/slider-2.jpg" alt="slide-6">
+              <img src="assets/images/slider-2.jpg" alt="slide-6">
               <div class="img-hover">
                 <div class="text-wrap">
                   <h5>Astor &amp; Yancy</h5>
@@ -391,7 +535,7 @@
           </a>
           <a href="#" class="img-holder">
             <div class="img-wrap">
-              <img src="./assets/images/slider-3.jpg" alt="slide-7">
+              <img src="assets/images/slider-3.jpg" alt="slide-7">
               <div class="img-hover">
                 <div class="text-wrap">
                   <h5>Astor &amp; Yancy</h5>
@@ -402,7 +546,7 @@
           </a>
           <a href="#" class="img-holder">
             <div class="img-wrap">
-              <img src="./assets/images/slider-4.jpg" alt="slide-8">
+              <img src="assets/images/slider-4.jpg" alt="slide-8">
               <div class="img-hover">
                 <div class="text-wrap">
                   <h5>Astor &amp; Yancy</h5>
@@ -413,7 +557,7 @@
           </a>
           <a href="#" class="img-holder">
             <div class="img-wrap">
-              <img src="./assets/images/slider-1.jpg" alt="slide-9">
+              <img src="assets/images/slider-1.jpg" alt="slide-9">
               <div class="img-hover">
                 <div class="text-wrap">
                   <h5>Astor &amp; Yancy</h5>
@@ -424,7 +568,7 @@
           </a>
           <a href="#" class="img-holder">
             <div class="img-wrap">
-              <img src="./assets/images/slider-2.jpg" alt="slide-10">
+              <img src="assets/images/slider-2.jpg" alt="slide-10">
               <div class="img-hover">
                 <div class="text-wrap">
                   <h5>Astor &amp; Yancy</h5>
@@ -435,7 +579,7 @@
           </a>
           <a href="#" class="img-holder">
             <div class="img-wrap">
-              <img src="./assets/images/slider-3.jpg" alt="slide-11">
+              <img src="assets/images/slider-3.jpg" alt="slide-11">
               <div class="img-hover">
                 <div class="text-wrap">
                   <h5>Astor &amp; Yancy</h5>
@@ -446,7 +590,7 @@
           </a>
           <a href="#" class="small-img">
             <div class="img-wrap">
-              <img src="./assets/images/slider-4.jpg" alt="slide-12">
+              <img src="assets/images/slider-4.jpg" alt="slide-12">
               <div class="img-hover">
                 <div class="text-wrap">
                   <h5>Astor &amp; Yancy</h5>
@@ -458,7 +602,7 @@
         </div>
       </div>
     </section>
-    <section class="connect">
+    <section class="feedback">
       <div class="container">
         <h2>Want to work with us?</h2>
         <p>Magnis modipsae que voloratati andigen daepeditem quiate re porem
@@ -475,7 +619,7 @@
         <div class="flex-wrap">
           <div class="col">
             <h5>Who we are</h5>
-            <div class="logo"><a href="#"><img src="./assets/images/reen-logo-footer.jpg" alt="logo"></a></div>
+            <div class="logo"><a href="#"><img src="assets/images/reen-logo-footer.jpg" alt="Reen"></a></div>
             <p>Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor.
               Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
             <a href="#" class="more-about">More about us<i class="icon-arrow-right2"></i></a>
@@ -485,25 +629,25 @@
             <div class="portfolio-box">
               <a href="#" class="img-holder">
                 <div class="img-wrap">
-                  <img src="./assets/images/portfolio-min-1.jpg" alt="portfolio-1">
+                  <img src="assets/images/portfolio-min-1.jpg" alt="portfolio-1">
                   <div class="img-hover"><i class="icon-plus"></i></div>
                 </div>
               </a>
               <a href="#" class="img-holder">
                 <div class="img-wrap">
-                  <img src="./assets/images/portfolio-min-2.jpg" alt="portfolio-2">
+                  <img src="assets/images/portfolio-min-2.jpg" alt="portfolio-2">
                   <div class="img-hover"><i class="icon-plus"></i></div>
                 </div>
               </a>
               <a href="#" class="img-holder">
                 <div class="img-wrap">
-                  <img src="./assets/images/portfolio-min-3.jpg" alt="portfolio-2">
+                  <img src="assets/images/portfolio-min-3.jpg" alt="portfolio-2">
                   <div class="img-hover"><i class="icon-plus"></i></div>
                 </div>
               </a>
               <a href="#" class="img-holder">
                 <div class="img-wrap">
-                  <img src="./assets/images/portfolio-min-4.jpg" alt="portfolio-2">
+                  <img src="assets/images/portfolio-min-4.jpg" alt="portfolio-2">
                   <div class="img-hover"><i class="icon-plus"></i></div>
                 </div>
               </a>
@@ -515,10 +659,10 @@
               inisita.</p>
             <address><i class="icon-location"></i>84 Street, City, State 24813</address>
             <p class="contact-info">
-              <a href="#"><i class="icon-mobile2"></i>+00 (123) 456 78 90</a>
+              <a href="tel:+001234567890"><i class="icon-mobile2"></i>+00 (123) 456 78 90</a>
             </p>
             <p class="contact-info">
-              <a href="#"><i class="icon-envelope-o"></i>info@reen.com</a>
+              <a href="mailto:info@reen.com"><i class="icon-envelope-o"></i>info@reen.com</a>
             </p>
           </div>
           <div class="col">
@@ -526,7 +670,7 @@
             <p>Conecus iure posae volor rembed modis aut lor volor accabora incim resto explabo.</p>
             <form class="form-subscription">
               <div class="form-group">
-                <input type="text" id="InputEmail" autocomplete="on" placeholder="Enter your email address">
+                <input type="email" id="InputEmail" autocomplete="on" placeholder="Enter your email address">
                 <button type="submit" class="button subscribe-btn">Subscribe</button>
               </div>
               <p id="result" class="alert-message"></p>
@@ -542,12 +686,14 @@
             <p>&copy;2014 REEN. All rights reserved.</p>
           </div>
           <div class="nav">
-            <a href="#">Home</a>
-            <a href="#"><span class="nav-dot">&middot;</span>Portfolio</a>
-            <a href="#"><span class="nav-dot">&middot;</span>Blog</a>
-            <a href="#"><span class="nav-dot">&middot;</span>About</a>
-            <a href="#"><span class="nav-dot">&middot;</span>Services</a>
-            <a href="#"><span class="nav-dot">&middot;</span>Contact</a>
+            <ul class="navigation">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
             <button type="button" class="scroll-btn desktop"><i class="icon-chevron-up"></i></button>
           </div>
         </div>

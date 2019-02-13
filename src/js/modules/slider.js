@@ -22,6 +22,7 @@ const Slider = {
             slidesToScroll: 3,
             infinite: true,
             dots: true,
+            arrows: false,
           },
         },
         {
@@ -45,10 +46,18 @@ const Slider = {
       autoplay: false,
       slidesToShow: 1,
       slidesToScroll: 1,
+      touchMove: true,
       dots: true,
       arrows: true,
       prevArrow: '<i class="icon-chevron-left prev1"></i>',
       nextArrow: '<i class="icon-chevron-right next1"></i>',
+      responsive: [
+        {
+          breakpoint: 980,
+          settings: {
+            arrows: false,
+          },
+        }],
     });
   },
 };

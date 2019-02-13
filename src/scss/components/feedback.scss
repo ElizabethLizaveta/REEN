@@ -1,4 +1,4 @@
-.connect {
+.feedback {
     padding: 7.93rem 0;
     text-align: center;
     font-size: map-get($connect, 'section-font-size');
@@ -39,8 +39,8 @@
     .connect-btn {
         @extend .button;
         
-        font-size: 0.937;
+        font-size: 0.937rem;
         letter-spacing: 0.03em;
-        padding: 1.062rem 1.625rem;       
+        padding: 1.18rem 1.56rem;       
     }
 }

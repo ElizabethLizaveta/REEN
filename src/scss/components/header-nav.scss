@@ -49,28 +49,25 @@
 
             @include media ("<desktop") {
                 flex-direction: column;
-                justify-content: space-between;
+                justify-content: flex-start;
                 position: absolute;
                 left: -100vw;
                 top: 57px;
                 width: 100vw;
                 min-height: 500px;
                 margin-left: -15px;
-                padding: 50px 0;
+                padding: 65px 0 10px 0;
                 text-align: center;
-                opacity: 0;
                 transition: 0.5s linear;
             }
 
             @include media ("<tablet") {
                 top: 50px;
-                padding-top: 70px;
+                padding-top: 30px;
                 padding-bottom: 10px;
             }
 
-
             &.active-menu {
-                opacity: 1;
                 background: map-get($header-nav, 'menu-mob-color');
                 left: 0;
                 right: 0;
@@ -104,10 +101,10 @@
                             box-shadow: 5px 0px 5px -3px map-get($header-nav, 'dropdown-shadow'), -5px 0px 5px -3px map-get($header-nav, 'dropdown-shadow');
                             border-radius: 5px 5px 0 0px;
                         }
-                    }
 
-                    .home-dropdown {
-                        display: block;
+                        .home-dropdown {
+                            display: block;
+                        }
                     }
 
                     .mega-menu-dropdown {
@@ -118,11 +115,6 @@
                         }
                     }
 
-                    .mega-menu-mob-dropdown {
-                        @include media ("<desktop") {
-                            display: block;
-                        }
-                    }
                 }
 
                 a {
@@ -171,12 +163,12 @@
             .social {
                 display: none;
 
-                @include media ("<tablet") {
+                @include media ("<desktop") {
                     display: block;
                 }
 
                 i {
-                    @include media ("<tablet") {
+                    @include media ("<desktop") {
                         margin: 0 1rem;
                     }
                 }
@@ -468,10 +460,7 @@
         z-index: 3;
 
         @include media ("<tablet") {
-            position: absolute;
-            top: 80px;
-            max-width: 800px;
-            width: 100%;
+            display: none;
         }
 
         .search-btn {
@@ -525,11 +514,8 @@
         }
 
         .search {
-            position: relative;
             display: flex;
             justify-content: space-between;
-            position: absolute;
-            top: -40px;
             width: 100%;
             padding: 0 15px;
 
@@ -556,12 +542,6 @@
         .logo {
             max-width: 80px;
             height: auto;
-        }
-
-        .aside-section {
-            .search {
-                display: none;
-            }
         }
 
         .main-nav {
