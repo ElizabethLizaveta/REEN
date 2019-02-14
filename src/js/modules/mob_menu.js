@@ -45,9 +45,21 @@ const MobMenu = {
       }
     });
 
+    homeDrop.dblclick(() => {
+      if ($(window).width() < 980) {
+        window.location.href = '/';
+      }
+    });
+
     megamenuDrop.click(() => {
       if ($(window).width() < 980) {
         megamenuDropdown.slideToggle();
+      }
+    });
+
+    megamenuDrop.dblclick(() => {
+      if ($(window).width() < 980) {
+        window.location.href = '/';
       }
     });
   },

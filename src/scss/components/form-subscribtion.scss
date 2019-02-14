@@ -9,10 +9,11 @@
         }
 
         input {
-            height: 48px;
+            height: 40px;
             width: 100%;
             border: 0;
             border-radius: 5px;
+            padding: 12px 105px 12px 12px;
             background: map-get($forms, 'form-input-bg');
             font-size: map-get($forms, 'form-font-size');
             color: map-get($forms, 'input-font-color');
@@ -20,6 +21,7 @@
 
             @include media ("<widescreen") {
                 height: 40px;
+                padding: 12px;
             }
 
             &::placeholder {
@@ -31,7 +33,7 @@
         .subscribe-btn {
             @extend .button;
 
-            padding: 0.68rem;
+            padding: 0.45rem 0.65rem;
             position: absolute;
             top: 50%;
             transform: translateY(-50%);

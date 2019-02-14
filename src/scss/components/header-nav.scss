@@ -15,7 +15,6 @@
         padding-bottom: 0;
         align-items: center;
         font-family: map-get($header-nav, 'section-font');
-        font-size: map-get($header-nav, 'section-font-size');
         color: map-get($header-nav, 'section-font-color');
 
         @include media ("<desktop") {
@@ -75,6 +74,7 @@
 
             li {
                 font-size: map-get($header-nav, 'section-font-size');
+                font-weight: 700;
                 padding: 20px;
                 border: 1px solid transparent;
 
@@ -88,6 +88,7 @@
                     margin: 0;
                     padding: 15px 0;
                     font-size: 16px;
+                    font-weight: 400;
                     border: none;
                 }
 
@@ -118,7 +119,7 @@
                 }
 
                 a {
-                    font-weight: 700;
+                    
                     text-transform: uppercase;
 
                     @include media ("<desktop") {

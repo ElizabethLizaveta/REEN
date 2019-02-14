@@ -2,40 +2,39 @@
 //
 // Base font styles for headings and links.
 html {
-  font-size: 16px;
+    font-size: 16px;
 
-  @include media("<=desktop") {
-    font-size: 15px;
-  }
+    @include media("<=desktop") {
+        font-size: 15px;
+    }
 
-  @include media("<=tablet") {
-    font-size: 14px;
-  }
+    @include media("<=tablet") {
+        font-size: 14px;
+    }
 }
 
-h1, 
-h2, 
-h3, 
+h1,
+h2,
+h3,
 h4,
 h5 {
-  font-family: map-deep-get($fonts, 'head-font');
-  font-weight: bold;
-  margin: 0;
+    font-family: map-deep-get($fonts, 'head-font');
+    margin: 0;
 }
 
 p {
-  margin: 0;
-  font-family: map-deep-get($fonts, 'base-font');
-  letter-spacing: 0.02em;
+    margin: 0;
+    font-family: map-deep-get($fonts, 'base-font');
+    letter-spacing: 0.02em;
 }
 
 a {
-  color: map-get($base, 'base-link-color');
+    color: map-get($base, 'base-link-color');
 
-  &:hover,
-  &:focus {
-    text-decoration: none;
-    color: map-get($base, 'link-hover');
-  }
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: map-get($base, 'link-hover');
+    }
 }
 

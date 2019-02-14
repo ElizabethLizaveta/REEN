@@ -2,8 +2,8 @@
 
 form,
 fieldset {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -13,22 +13,22 @@ input[type='email'],
 input[type='search'],
 input[type='password'],
 textarea {
-  outline: none;
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
-  box-sizing: border-box;
-  padding: map-get($forms, 'form-element-padding');
-  font-family: map-get($forms, 'form-font-family');
-  font-size: map-get($forms, 'form-font-size');
+    outline: none;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    box-sizing: border-box;
+    padding: 12px;
+    font-family: map-get($forms, 'form-font-family');
+    font-size: map-get($forms, 'form-font-size');
 }
 
 select {
-  -webkit-border-radius: 0;
+    -webkit-border-radius: 0;
 }
 
 textarea {
-  resize: vertical;
-  vertical-align: middle;
+    resize: vertical;
+    vertical-align: middle;
 }
 
 button:not([disabled]),
@@ -36,12 +36,12 @@ input[type='button'],
 input[type='reset'],
 input[type='file'],
 input[type='submit'] {
-  outline: none;
-  -webkit-appearance: none;
-  font-family: map-get($forms, 'forms-font-family');
-  cursor: pointer;
-
-  @include hover-visited {
     outline: none;
-  }
+    -webkit-appearance: none;
+    font-family: map-get($forms, 'forms-font-family');
+    cursor: pointer;
+
+    @include hover-visited {
+        outline: none;
+    }
 }

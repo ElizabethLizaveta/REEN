@@ -52,8 +52,8 @@
         }
     }
 
-    .prev1,
-    .next1 {
+    .prev,
+    .next {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -84,7 +84,7 @@
         }
     }
 
-    .prev1 {
+    .prev {
         left: 20px;
 
         @include media ("<1310px") {
@@ -92,7 +92,7 @@
         }
     }
 
-    .next1 {
+    .next {
         right: 20px;
 
         @include media ("<1310px") {

@@ -1,33 +1,33 @@
 .portfolio {
-	padding: 7.93rem 0;
-	text-align: center;
-	font-size: map-get($portfolio, 'section-font-size');
-	line-height: 2.125rem;
-	letter-spacing: 0.01em;
-	background: map-get($portfolio, 'section-bg');
-	overflow-x: hidden;
+    padding: 7.93rem 0;
+    text-align: center;
+    font-size: map-get($portfolio, 'section-font-size');
+    line-height: 2.125rem;
+    letter-spacing: 0.01em;
+    background: map-get($portfolio, 'section-bg');
+    overflow-x: hidden;
 
     @include media ("<desktop") {
         padding: 5rem 0;
     }
 
     @include media ("<tablet") {
-		padding: 3rem 0;
-		font-size: 1.2rem;
-		line-height: 1.5rem;
+        padding: 3rem 0;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
     }
-	
-	.flex-wrap {
-		@include media ("<tablet") {
-			flex-direction: column;
-		}
-	}
+    
+    .flex-wrap {
+        @include media ("<tablet") {
+            flex-direction: column;
+        }
+    }
 
-	h2 {
-		font-size: map-get($headings, 'h2-font-size');
+    h2 {
+        font-size: map-get($headings, 'h2-font-size');
         line-height: 3.375rem;
         letter-spacing: 0.01em;
-        margin-bottom: 2.43rem;
+        margin-bottom: 1.5rem;
 
         @include media ("<tablet") {
             font-size: 2.4rem;
@@ -36,7 +36,7 @@
         @include media ("<phone") {
             font-size: 1.7rem;
             margin-bottom: 1rem;
-         }
+        }
     }
 
     p {
@@ -47,72 +47,79 @@
         }
     }
 
-	.img-holder {
-		font-size: 14px;
-		line-height: 1.375rem;
-		background: map-get($portfolio, 'img-holder-bg');
-		border: 1px solid map-get($portfolio, 'section-border');
+    .img-holder {
+        font-size: 14px;
+        line-height: 1.375rem;
+        background: map-get($portfolio, 'img-holder-bg');
+        border: 1px solid map-get($portfolio, 'section-border');
 
-		h4 {
-			font-size: map-get($headings, 'h4-font-size');
+        h4 {
+            font-size: map-get($headings, 'h4-font-size');
             line-height: 1.625rem;
             letter-spacing: 0.02em;
-			margin-top: 2.06rem;
-			margin-bottom: 0.6rem;
+            margin-top: 2.06rem;
+            margin-bottom: 0.6rem;
 
-			@include media ("<desktop"and">tablet") {
-				font-size: 1rem;
-			}
-		}
+            @include media ("<desktop"and">tablet") {
+                font-size: 1rem;
+            }
+        }
 
-		p {
-			margin-bottom: 1.875rem;
-		}
+        p {
+            margin-bottom: 1.875rem;
+        }
 
-		.img-hover {
-			.text-wrap {
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				font-size: 14px;
-				line-height: 0;
-				color: white;
-					
-				h5 {
-					font-size: map-get($headings, 'h5-font-size');
+        .img-hover {
+            .text-wrap {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 14px;
+                line-height: 0;
+                color: white;
+                    
+                h5 {
+                    font-size: map-get($headings, 'h5-font-size');
                     line-height: 1.375rem;
                     letter-spacing: 0.01em;
-					margin-bottom: 0.6rem;
-				}
+                    margin-bottom: 0.6rem;
+                }
 
-				p {
-					margin: 0;	
-				}
-			}
-		}
-	}
+                p {
+                    margin: 0;	
+                }
+            }
+        }
+    }
 
-	.big-img+.big-img {
-		margin-left: 30px;
+    .big-img+.big-img {
+        margin-left: 30px;
 
-		@include media ("<tablet") {
-			margin-left: 0;
-			margin-top: 30px;
-		}
-	}
+        @include media ("<tablet") {
+            margin-left: 0;
+            margin-top: 30px;
+        }
+    }
 
-	.big-img {
-		&:hover {
-			p {
-				color: map-get($font-colors, 'dark-blue');
-			}
-		}
-	}
+    .big-img {
+        width: 50%;
+        margin-bottom: 3.5rem;
+
+        @include media ("<tablet") {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
+        .text-wrap {
+            padding: 0 15px;
+        }
+
+        &:hover {
+            p {
+                color: map-get($font-colors, 'dark-blue');
+            }
+        }
+    }
 }
- 
 
-picture {
-	display: block;
- 
-}

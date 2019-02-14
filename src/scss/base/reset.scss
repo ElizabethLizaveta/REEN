@@ -3,23 +3,23 @@
 // Note: If you use a framework that includes base styling then you need to remove this file.
 
 html {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 *, *:before, *:after {
-	box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 body {
-  @include font-smoothing(on);
-  color: map-get($base, 'base-text-color');
-  font-family:  map-get($base, 'base-font-family');
-  overflow-x: hidden;
+    @include font-smoothing(on);
+    color: map-get($base, 'base-text-color');
+    font-family:  map-get($base, 'base-font-family');
+    overflow-x: hidden;
 }
 
 // adaptive images
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 // google map fix
@@ -28,36 +28,36 @@ img {
 // hide tel links on desktop
 @media only screen and (min-width: 1025px) {
     a[href^="tel"], a[href^="skype"], a[href^="sms"] {
-    cursor: default;
-    pointer-events: none;
-  }
+        cursor: default;
+        pointer-events: none;
+    }
 }
 
 a {
-  @include hover-visited {
+    @include hover-visited {
+        text-decoration: none;
+        outline: none;
+    }
     text-decoration: none;
-    outline: none;
-  }
-  text-decoration: none;
 }
 
 address {
-  font-style: normal;
+    font-style: normal;
 }
 
 ul, li {
-  list-style-type: none;
-  text-decoration: none;
+    list-style-type: none;
+    text-decoration: none;
 }
 
 button {
-  border: 0;
-  outline: 0;
-  background: none;
-  text-transform: uppercase;
+    border: 0;
+    outline: 0;
+    background: none;
+    text-transform: uppercase;
 }
 
 //slick-slider
 .slick-dotted.slick-slider {
-  margin: 0;
+    margin: 0;
 }

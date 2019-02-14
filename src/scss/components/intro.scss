@@ -1,16 +1,11 @@
 .intro {
-    height: 864px;
-
+    height: 876px;
 
     @include media ("<widescreen") {
         height: 700px;
     }
 
     @include media ("<desktop") {
-        height: 500px;
-    }
-
-    @include media ("<tablet") {
         height: 500px;
     }
 
@@ -21,7 +16,7 @@
         @include media ("<desktop") {
             font-size: 1.3rem;
         }
-      
+
         h1 {
             font-size: map-get($headings, 'h1-font-size');
             text-transform: uppercase;
@@ -39,7 +34,6 @@
 
             @include media ("<tablet") {
                 font-size: 2.5rem;
-                margin-bottom: 1.3rem;
             }
 
             @include media ("<phone") {
@@ -96,17 +90,21 @@
     }
     
     .title-box {
-        max-width: 66.875rem;
+        max-width: 64rem;
         margin: 0 auto;
         text-align: center;
         right: 0;
+
+        h1 {
+            color: map-get($intro, 'slide-1-head-color');
+        }
     }
 }
 
 .intro-2 {
     @extend .intro;
 
-    padding-top: 15rem;
+    padding-top: 12rem;
     color: map-get($intro, 'slide-2-font-color');
     background: 50% 50%/cover;
 
@@ -136,12 +134,12 @@
 .intro-3 {
     @extend .intro;
 
-    padding-top: 12rem;
+    padding-top: 14rem;
     color: map-get($intro, 'slide-3-font-color');
     background: 50% 50%/cover;
 
     @include media ("<widescreen") {
-        padding-top: 9.5rem;
+        padding-top: 10rem;
     }
 
     @include media ("<desktop") {

@@ -15,127 +15,127 @@ $fonts: (
 );
 
 $font-colors: (
-  'white': #fff,
-  'dark-blue':  #506a85, 
+    'white': #fff,
+    'dark-blue':  #506a85, 
 );
 
 $base: (
-  'base-font-size': 0.875rem, //14px
-  'base-link-size': 0.875rem, //14px
-  'base-font-family':  unquote("'Source Sans Pro', sans-serif"),
-  'base-text-color': #506a85,
-  'base-link-color': #506a85,
-  'link-hover': #00bc9c,
-  'button-bg': #00bc9c,
-  'button-border': #00a085,
-  'button-hover':  #17a78b,
-  'img-hover': rgba(#00bc9c, .9),
+    'base-font-size': 0.875rem, //14px
+    'base-link-size': 0.875rem, //14px
+    'base-font-family':  unquote("'Source Sans Pro', sans-serif"),
+    'base-text-color': #506a85,
+    'base-link-color': #506a85,
+    'link-hover': #00bc9c,
+    'button-bg': #00bc9c,
+    'button-border': #00a085,
+    'button-hover':  #17a78b,
+    'img-hover': rgba(#00bc9c, .9),
 );
 
 $header-top: (
-  'section-bg': #f5f7fa,
-  'section-border': #e6e9ed,
-  'section-font-size': 0.75rem,
-  'section-font-family': unquote("'Source Sans Pro', sans-serif"),
-  'section-font-color': #506a85,
-  'social-link-hover': #fff,
-  'facebook-hover-bg': #4668b3,
-  'google-hover-bg': #de5745,
-  'twitter-hover-bg': #2fbbed,
-  'pinterest-hover-bg': #d94348,
-  'behance-hover-bg': #3079ff,
-  'dribbble-hover-bg': #eb6397,
+    'section-bg': #f5f7fa,
+    'section-border': #e6e9ed,
+    'section-font-size': 0.75rem,
+    'section-font-family': unquote("'Source Sans Pro', sans-serif"),
+    'section-font-color': #506a85,
+    'social-link-hover': #fff,
+    'facebook-hover-bg': #4668b3,
+    'google-hover-bg': #de5745,
+    'twitter-hover-bg': #2fbbed,
+    'pinterest-hover-bg': #d94348,
+    'behance-hover-bg': #3079ff,
+    'dribbble-hover-bg': #eb6397,
 );
 
 $header-nav: (
-  'section-bg': #fff,
-  'section-font-size': 0.937rem,
-  'section-font-family': unquote("'Source Sans Pro', sans-serif"),
-  'section-font-color': #506a85,
-  'section-font-color-selected': #2b3a49,
-  'menu-mob-color': rgba(#506a85, 0.95),
-  'menu-selected':  #5d7998,
-  'icons-bg': #dedede,
-  'dropdown-bg': #f5f7fa,
-  'dropdown-border': #e6e9ed,
-  'dropdown-shadow': rgba(#e6e9ed, 0.6),
-  'fixed-header-border': #e6e9ed,
+    'section-bg': #fff,
+    'section-font-size': 0.937rem,
+    'section-font-family': unquote("'Source Sans Pro', sans-serif"),
+    'section-font-color': #506a85,
+    'section-font-color-selected': #2b3a49,
+    'menu-mob-color': rgba(#506a85, 0.95),
+    'menu-selected':  #5d7998,
+    'icons-bg': #dedede,
+    'dropdown-bg': #f5f7fa,
+    'dropdown-border': #e6e9ed,
+    'dropdown-shadow': rgba(#e6e9ed, 0.6),
+    'fixed-header-border': #e6e9ed,
 );
 
 $home-dropdown: (
-  'dropdown-bg': #f5f7fa,
-  'dropdown-mob-bg': #7091b5,
-  'dropdown-border': #e6e9ed,
-  'li-hover-bg': #00bc9c,
-  'link-hover-font': #fff,
+    'dropdown-bg': #f5f7fa,
+    'dropdown-mob-bg': #7091b5,
+    'dropdown-border': #e6e9ed,
+    'li-hover-bg': #00bc9c,
+    'link-hover-font': #fff,
 );
 
 $mega-menu-dropdown: (
-  'dropdown-bg': #f5f7fa,
-  'dropdown-border': #e6e9ed,
+    'dropdown-bg': #f5f7fa,
+    'dropdown-border': #e6e9ed,
 );
 
 $intro: (
-  'section-font-size': 1.5rem,
-  'slide-1-font-color': #fff,
-  'slide-2-font-color': #fff,
-  'slide-3-font-color': #36698a,
-  'slide-3-head-color': #fff,
-  'slide-3-head-bg': #36698a,
-  'slide-4-font-color': #fff,
-  'slide-4-head-color': #fff,
-  'slide-4-head-bg': #36698a,
-  'slide-5-font-color': #fff,
+    'section-font-size': 1.5rem,
+    'slide-1-head-color': #fff,
+    'slide-1-font-color': #a3b1bf,
+    'slide-2-font-color': #fff,
+    'slide-3-font-color': #36698a,
+    'slide-3-head-color': #fff,
+    'slide-3-head-bg': #36698a,
+    'slide-4-font-color': #fff,
+    'slide-4-head-color': #fff,
+    'slide-4-head-bg': #36698a,
+    'slide-5-font-color': #fff,
 );
 
 $info: (
-  'section-font-size': 1.375rem,
-  'icons-bg': #00bc9c,
+    'section-font-size': 1.375rem,
+    'icons-bg': #00bc9c,
 );
 
 $portfolio: (
-  'section-font-size': 1.375rem,
-  'section-bg': #f2f5f7,
-  'img-holder-bg': #fff,
-  'section-border': #e6e9ed,
+    'section-font-size': 1.375rem,
+    'section-bg': #f2f5f7,
+    'img-holder-bg': #fff,
+    'section-border': #e6e9ed,
 );
 
 $slider: (
-  'arrow-color': #fff,
-  'arrow-hover': #00bc9c,
-  'arrow-bg': #36698a,
-  'arrow-mob-color': #506a85,
-  'arrow-mob-bg': #fff,
-  'arrow-hover-bg': #36698a,
-  'dots-bg': #fff,
-  'dots-color': #506a85,
-  'dots-active-color': #00bc9c,
+    'arrow-color': #fff,
+    'arrow-hover': #00bc9c,
+    'arrow-bg': #506a85,
+    'arrow-mob-color': #506a85,
+    'arrow-mob-bg': #fff,
+    'arrow-hover-bg': #36698a,
+    'dots-bg': #fff,
+    'dots-color': #506a85,
+    'dots-active-color': #00bc9c,
 );
 
 $connect: (
-  'section-font-size': 1.375rem,
+    'section-font-size': 1.375rem,
 );
 
 $forms: (
-  'form-font-family': unquote("'Source Sans Pro', sans-serif"),
-  'input-font-color': #fff,
-  'placeholder-font-color': #a3b1bf,
-  'form-element-padding': 12px,
-  'form-input-bg': #4e5c6c,
-  'form-font-size': 0.875rem,
-  'form-button-font-size':  0.81rem, 
+    'form-font-family': unquote("'Source Sans Pro', sans-serif"),
+    'input-font-color': #fff,
+    'placeholder-font-color': #a3b1bf,
+    'form-input-bg': #4e5c6c,
+    'form-font-size': 0.875rem,
+    'form-button-font-size':  0.81rem, 
 );
 
 $footer-top: (
-  'section-bg':  #1b3e56,
-  'section-font-size': 14px,
-  'section-font-color': #a3b1bf,
+    'section-bg':  #2f4052,
+    'section-font-size': 14px,
+    'section-font-color': #a3b1bf,
 );
 
 $footer-nav: (
-  'section-bg':  #153246,
-  'section-font-size': 14px,
-  'section-font-color': #a3b1bf,
+    'section-bg':  #283645,
+    'section-font-size': 14px,
+    'section-font-color': #a3b1bf,
 );
 
 //image path setting

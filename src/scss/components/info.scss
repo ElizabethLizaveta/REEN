@@ -1,5 +1,5 @@
 .info {
-    padding: 7.93rem 0;
+    padding: 7.5rem 0;
     text-align: center;
 
     @include media ("<desktop") {
@@ -17,7 +17,7 @@
     }
 
     .text-wrap {
-        max-width: 790px;
+        max-width: 850px;
         padding: 0 15px;
         margin: 0 auto;
         font-size: map-get($info, 'section-font-size');
@@ -33,7 +33,7 @@
             font-size: map-get($headings, 'h2-font-size');
             line-height: 3.375rem;
             letter-spacing: 0.01em;
-            margin-bottom: 2.43rem;
+            margin-bottom: 1.8rem;
 
             @include media ("<tablet") {
                 font-size: 2.4rem;
@@ -46,7 +46,7 @@
         }
 
         p {
-            margin-bottom: 4.625rem;
+            margin-bottom: 4.1rem;
 
             @include media ("<tablet") {
                 margin-bottom: 2.5rem;
@@ -56,7 +56,7 @@
 
     .col {
         display: flex;
-        width: 31%;
+        width: 32%;
         text-align: left;
         font-size: 16px;
         line-height: 1.562rem;
@@ -75,6 +75,10 @@
 
             @include media ("<phone") {
                 font-size: 40px;
+            }
+
+            img {
+                margin-top: 5px;
             }
         }
 

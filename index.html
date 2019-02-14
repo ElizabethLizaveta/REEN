@@ -6,9 +6,146 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reen</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Lato%7CSource+Sans+Pro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:900%7CSource+Sans+Pro:400,700" rel="stylesheet">
   <link media="all" rel="stylesheet" href="assets/css/vendor.min.css">
   <link media="all" rel="stylesheet" href="assets/css/style.min.css">
+
+  <style>
+      .intro-1 {
+          background-image: url('assets/images/intro-bg-1-small.jpg');
+      }
+      .intro-2 {
+          background-image: url('assets/images/intro-bg-2-small.jpg');
+      }
+      .intro-3 {
+          background-image: url('assets/images/intro-bg-3-small.jpg');
+      }
+      .intro-4 {
+          background-image: url('assets/images/intro-bg-4-small.jpg');
+      }
+      .intro-5 {
+          background-image: url('assets/images/intro-bg-5-small.jpg');
+      }
+      @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+        .intro-1 {
+          background-image: url('assets/images/intro-bg-1-small@2x.jpg');
+        }
+        .intro-2 {
+          background-image: url('assets/images/intro-bg-2-small@2x.jpg');
+        }
+        .intro-3 {
+          background-image: url('assets/images/intro-bg-3-small@2x.jpg');
+        }
+        .intro-4 {
+          background-image: url('assets/images/intro-bg-4-small@2x.jpg');
+        }
+        .intro-5 {
+          background-image: url('assets/images/intro-bg-5-small@2x.jpg');
+        }
+      } 
+      @media (min-width: 480px){
+        .intro-1 {
+          background-image: url('assets/images/intro-bg-1-medium.jpg');
+        }
+        .intro-2 {
+          background-image: url('assets/images/intro-bg-2-medium.jpg');
+        }
+        .intro-3 {
+          background-image: url('assets/images/intro-bg-3-medium.jpg');
+        }
+        .intro-4 {
+          background-image: url('assets/images/intro-bg-4-medium.jpg');
+        }
+        .intro-5 {
+          background-image: url('assets/images/intro-bg-5-medium.jpg');
+        }
+      }  
+      @media (min-width: 480px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 480px) and (min-resolution: 144dpi) {
+        .intro-1 {
+          background-image: url('assets/images/intro-bg-1-medium@2x.jpg');
+        }
+        .intro-2 {
+          background-image: url('assets/images/intro-bg-2-medium@2x.jpg');
+        }
+        .intro-3 {
+          background-image: url('assets/images/intro-bg-3-medium@2x.jpg');
+        }
+        .intro-4 {
+          background-image: url('assets/images/intro-bg-4-medium@2x.jpg');
+        }
+        .intro-5 {
+          background-image: url('assets/images/intro-bg-5-medium@2x.jpg');
+        }
+      }
+      @media (min-width: 768px){
+        .intro-1 {
+          background-image: url('assets/images/intro-bg-1-large.jpg');
+        }
+        .intro-2 {
+          background-image: url('assets/images/intro-bg-2-large.jpg');
+        }
+        .intro-3 {
+          background-image: url('assets/images/intro-bg-3-large.jpg');
+        }
+        .intro-4 {
+          background-image: url('assets/images/intro-bg-4-large.jpg');
+        }
+        .intro-5 {
+          background-image: url('assets/images/intro-bg-5-large.jpg');
+        }
+      } 
+      @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi) {
+        .intro-1 {
+          background-image: url('assets/images/intro-bg-1-large@2x.jpg');
+        }
+        .intro-2 {
+          background-image: url('assets/images/intro-bg-2-large@2x.jpg');
+        }
+        .intro-3 {
+          background-image: url('assets/images/intro-bg-3-large@2x.jpg');
+        }
+        .intro-4 {
+          background-image: url('assets/images/intro-bg-4-large@2x.jpg');
+        }
+        .intro-5 {
+          background-image: url('assets/images/intro-bg-5-large@2x.jpg');
+        }
+      }
+      @media (min-width: 1200px){
+        .intro-1 {
+          background-image: url('assets/images/intro-bg-1-extralarge.jpg');
+        }
+        .intro-2 {
+          background-image: url('assets/images/intro-bg-2-extralarge.jpg');
+        }
+        .intro-3 {
+          background-image: url('assets/images/intro-bg-3-extralarge.jpg');
+        }
+        .intro-4 {
+          background-image: url('assets/images/intro-bg-4-extralarge.jpg');
+        }
+        .intro-5 {
+          background-image: url('assets/images/intro-bg-5-extralarge.jpg');
+        }
+      }  
+      @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi) {
+        .intro-1 {
+          background-image: url('assets/images/intro-bg-1-extralarge@2x.jpg');
+        }
+        .intro-2 {
+          background-image: url('assets/images/intro-bg-2-extralarge@2x.jpg');
+        }
+        .intro-3 {
+          background-image: url('assets/images/intro-bg-3-extralarge@2x.jpg');
+        }
+        .intro-4 {
+          background-image: url('assets/images/intro-bg-4-extralarge@2x.jpg');
+        }
+        .intro-5 {
+          background-image: url('assets/images/intro-bg-5-extralarge@2x.jpg');
+        }
+      }
+    </style>
 </head>
 
 <body>
@@ -190,142 +327,7 @@
   </header>
 
   <main>
-    <style>
-      .intro-1 {
-          background-image: url('assets/images/intro-bg-1-small.jpg');
-      }
-      .intro-2 {
-          background-image: url('assets/images/intro-bg-2-small.jpg');
-      }
-      .intro-3 {
-          background-image: url('assets/images/intro-bg-3-small.jpg');
-      }
-      .intro-4 {
-          background-image: url('assets/images/intro-bg-4-small.jpg');
-      }
-      .intro-5 {
-          background-image: url('assets/images/intro-bg-5-small.jpg');
-      }
-      @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-        .intro-1 {
-          background-image: url('assets/images/intro-bg-1-small@2x.jpg');
-        }
-        .intro-2 {
-          background-image: url('assets/images/intro-bg-2-small@2x.jpg');
-        }
-        .intro-3 {
-          background-image: url('assets/images/intro-bg-3-small@2x.jpg');
-        }
-        .intro-4 {
-          background-image: url('assets/images/intro-bg-4-small@2x.jpg');
-        }
-        .intro-5 {
-          background-image: url('assets/images/intro-bg-5-small@2x.jpg');
-        }
-      } 
-      @media (min-width: 480px){
-        .intro-1 {
-          background-image: url('assets/images/intro-bg-1-medium.jpg');
-        }
-        .intro-2 {
-          background-image: url('assets/images/intro-bg-2-medium.jpg');
-        }
-        .intro-3 {
-          background-image: url('assets/images/intro-bg-3-medium.jpg');
-        }
-        .intro-4 {
-          background-image: url('assets/images/intro-bg-4-medium.jpg');
-        }
-        .intro-5 {
-          background-image: url('assets/images/intro-bg-5-medium.jpg');
-        }
-      }  
-      @media (min-width: 480px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 480px) and (min-resolution: 144dpi) {
-        .intro-1 {
-          background-image: url('assets/images/intro-bg-1-medium@2x.jpg');
-        }
-        .intro-2 {
-          background-image: url('assets/images/intro-bg-2-medium@2x.jpg');
-        }
-        .intro-3 {
-          background-image: url('assets/images/intro-bg-3-medium@2x.jpg');
-        }
-        .intro-4 {
-          background-image: url('assets/images/intro-bg-4-medium@2x.jpg');
-        }
-        .intro-5 {
-          background-image: url('assets/images/intro-bg-5-medium@2x.jpg');
-        }
-      }
-      @media (min-width: 768px){
-        .intro-1 {
-          background-image: url('assets/images/intro-bg-1-large.jpg');
-        }
-        .intro-2 {
-          background-image: url('assets/images/intro-bg-2-large.jpg');
-        }
-        .intro-3 {
-          background-image: url('assets/images/intro-bg-3-large.jpg');
-        }
-        .intro-4 {
-          background-image: url('assets/images/intro-bg-4-large.jpg');
-        }
-        .intro-5 {
-          background-image: url('assets/images/intro-bg-5-large.jpg');
-        }
-      } 
-      @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi) {
-        .intro-1 {
-          background-image: url('assets/images/intro-bg-1-large@2x.jpg');
-        }
-        .intro-2 {
-          background-image: url('assets/images/intro-bg-2-large@2x.jpg');
-        }
-        .intro-3 {
-          background-image: url('assets/images/intro-bg-3-large@2x.jpg');
-        }
-        .intro-4 {
-          background-image: url('assets/images/intro-bg-4-large@2x.jpg');
-        }
-        .intro-5 {
-          background-image: url('assets/images/intro-bg-5-large@2x.jpg');
-        }
-      }
-      @media (min-width: 1200px){
-        .intro-1 {
-          background-image: url('assets/images/intro-bg-1-extralarge.jpg');
-        }
-        .intro-2 {
-          background-image: url('assets/images/intro-bg-2-extralarge.jpg');
-        }
-        .intro-3 {
-          background-image: url('assets/images/intro-bg-3-extralarge.jpg');
-        }
-        .intro-4 {
-          background-image: url('assets/images/intro-bg-4-extralarge.jpg');
-        }
-        .intro-5 {
-          background-image: url('assets/images/intro-bg-5-extralarge.jpg');
-        }
-      }  
-      @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi) {
-        .intro-1 {
-          background-image: url('assets/images/intro-bg-1-extralarge@2x.jpg');
-        }
-        .intro-2 {
-          background-image: url('assets/images/intro-bg-2-extralarge@2x.jpg');
-        }
-        .intro-3 {
-          background-image: url('assets/images/intro-bg-3-extralarge@2x.jpg');
-        }
-        .intro-4 {
-          background-image: url('assets/images/intro-bg-4-extralarge@2x.jpg');
-        }
-        .intro-5 {
-          background-image: url('assets/images/intro-bg-5-extralarge@2x.jpg');
-        }
-      }
-    </style>
+    
     <section class="intro-section">
       <div class="intro-slider slider">
         <div class="intro-1">
@@ -442,28 +444,32 @@
         <p>Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.</p>
         <div class="flex-wrap">
           <a href="#" class="img-holder big-img">
-            <div class="img-wrap"> 
+            <div class="img-wrap">
               <picture>
-                <img src="assets/images/portfolio-ex-1.jpg"
-                    srcset="assets/images/portfolio-ex-1.jpg 1x,
-                    assets/images/portfolio-ex-2.jpg 2x" alt="example-1">
+                <img src="assets/images/portfolio-ex-1.jpg" srcset="assets/images/portfolio-ex-1.jpg 1x,
+                    assets/images/portfolio-ex-1@2x.jpg 2x"
+                  alt="example-1">
               </picture>
               <div class="img-hover"><i class="icon-plus"></i></div>
             </div>
-            <h4>Grand Motel gets an identity brushup</h4>
-            <p>Identity</p>
+            <div class="text-wrap">
+              <h4>Grand Motel gets an identity brushup</h4>
+              <p>Identity</p>
+            </div>
           </a>
           <a href="#" class="img-holder big-img">
             <div class="img-wrap">
               <picture>
-                  <img src="assets/images/portfolio-ex-2.jpg"
-                  srcset="assets/images/portfolio-ex-2.jpg 1x,
-                  assets/images/portfolio-ex-1.jpg 2x" alt="example-2">
+                <img src="assets/images/portfolio-ex-2.jpg" srcset="assets/images/portfolio-ex-2.jpg 1x,
+                  assets/images/portfolio-ex-2@2x.jpg 2x"
+                  alt="example-2">
               </picture>
               <div class="img-hover"><i class="icon-plus"></i></div>
             </div>
-            <h4>Fresh branding for a creative startup</h4>
-            <p>Identity</p>
+            <div class="text-wrap">
+              <h4>Fresh branding for a creative startup</h4>
+              <p>Identity</p>
+            </div>
           </a>
         </div>
         <div class="portfolio-slider slider text-center">
@@ -604,9 +610,11 @@
     </section>
     <section class="feedback">
       <div class="container">
-        <h2>Want to work with us?</h2>
-        <p>Magnis modipsae que voloratati andigen daepeditem quiate re porem
-          aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
+        <div class="text-wrap">
+          <h2>Want to work with us?</h2>
+          <p>Magnis modipsae que voloratati andigen daepeditem quiate re porem
+            aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
+        </div>
         <button type="button" class="button connect-btn">Get in touch</button>
       </div>
     </section>

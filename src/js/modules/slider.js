@@ -12,8 +12,8 @@ const Slider = {
       slidesToScroll: 4,
       dots: true,
       arrows: true,
-      prevArrow: '<i class="icon-chevron-left prev1"></i>',
-      nextArrow: '<i class="icon-chevron-right next1"></i>',
+      prevArrow: '<i class="icon-chevron-left prev"></i>',
+      nextArrow: '<i class="icon-chevron-right next"></i>',
       responsive: [
         {
           breakpoint: 980,
@@ -30,6 +30,7 @@ const Slider = {
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
+            arrows: false,
           },
         },
         {
@@ -37,6 +38,7 @@ const Slider = {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
+            arrows: false,
           },
         }],
     });
@@ -49,8 +51,8 @@ const Slider = {
       touchMove: true,
       dots: true,
       arrows: true,
-      prevArrow: '<i class="icon-chevron-left prev1"></i>',
-      nextArrow: '<i class="icon-chevron-right next1"></i>',
+      prevArrow: '<i class="icon-chevron-left prev"></i>',
+      nextArrow: '<i class="icon-chevron-right next"></i>',
       responsive: [
         {
           breakpoint: 980,
